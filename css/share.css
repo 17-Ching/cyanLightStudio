@@ -1,0 +1,289 @@
+@import url("reset.css");
+
+ body {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.warpper{
+    width: 100%;
+    background-color: #008C91;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+/* --------------nav-------------- */
+nav{
+    padding: 0 178px;
+    background-color: #004257;
+}
+
+nav ul{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 57px;
+    align-items: center;
+    padding: 5px 0;
+}
+
+nav li{
+    /* border: 2px solid green; */
+    flex-grow: 1;
+    position: relative;
+}
+
+nav img{
+    width: 70px;
+    margin-top: 10px;
+    object-fit:cover;
+    overflow: hidden;
+}
+
+nav a{
+    /* border: 2px solid green; */
+    text-decoration: none;
+    color: #FFF9E6;
+    font-size: 16px ;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    display: block;
+    letter-spacing: 4px;
+    transition: .5s;
+}
+
+nav li::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #FF9800;
+    transition: .3s;
+    display: block;
+  }
+
+nav li:nth-child(4)::before {
+    display: none;
+}
+
+
+  nav li:hover::before {
+    width: 100%;
+    left: 0;
+  }
+
+nav a:hover{
+    color: #FF9800;
+}
+
+
+
+/* -------------footer-------------- */
+footer{
+    background-color: #67401E;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-warp{
+    /* border: 2px solid red;  */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-warp .img-group{
+    width: 650px;
+    /* border: 2px solid green;  */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.img-group img{
+    width: 120px;
+}
+
+.tool{
+    /* border: 2px solid rebeccapurple;  */
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin: 20px 50px 0 50px;
+}
+
+/* ----左邊工具列---- */
+
+.tool-left{
+    flex-basis: 0;
+    /* border: 2px solid yellow;  */
+    padding-top: 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.tool-left p{
+    font-size: 14px;
+    color: #FFF9E6;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tool-left .foot-button{
+    /* border: 2px solid blue;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.tool-left .foot-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    background-color: #FF9800; 
+    padding: 10px; 
+    width: 100px;
+    height: 10px;
+    border-radius: 0;
+    transition: .5s;
+    margin-bottom: 10px;
+}
+
+.tool-left span{
+    font-size: 12px; 
+    color: white; 
+}
+
+.tool-left .foot-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    background-color: #FF9800; 
+    padding: 10px; 
+    width: 100px;
+    height: 10px;
+    border-radius: 0;
+    transition: .5s;
+}
+
+.tool-left .foot-contact img{
+    margin-left: 4px; 
+    width: 16px;
+    height: 14px;
+}
+
+.tool-left .foot-form:hover{
+    background-color: #004257;
+}
+
+.tool-left .foot-contact:hover{
+    background-color: #004257;
+}
+
+/* ---------中間工具列------------ */
+
+.tool-center{
+    /* border: 2px solid rgb(0, 255, 242);  */
+    display:flex;
+    flex-direction: column;
+    padding-top: 20px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.tool-center img{
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+social-media{
+    
+    width: 176px;
+    /* border: 2px solid rgb(255, 6, 172); */
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+social-media a{
+    text-decoration: none;
+}
+
+social-media i{
+    color: #FFF9E6;
+    transition: .5s;
+}
+
+social-media a:hover i{
+    color: #FF9800;
+}
+
+/* ----------右邊工具列------------ */
+
+.tool-right{
+    /* border: 2px solid rgb(255, 48, 141);  */
+    flex-wrap: wrap;
+    /* width: 120px; */
+    flex-basis: 0;
+    flex-grow: 1;
+    
+}
+
+.tool-right .tool-a-warp{
+    width: 120px;
+    margin: 0 auto;
+}
+
+.tool-right a{
+    /* border: 2px solid green;  */
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #FFF9E6;
+    line-height: 4;
+}
+
+.tool-right a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* ---------版權宣告-------------- */
+
+small{
+    
+    
+}
+
+small p{
+    background-color: #001F28;
+    color: #FFF9E6;
+    font-size: 10px;
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}

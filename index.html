@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cyanlightstudio</title>
+    <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="stylesheet" href="./css/share.css">
+
+
+    <!------------字體--------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!------------font awesome---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-----------swiper-------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <div class="warpper">
+        <!-------------------輪播圖-------------------->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/index_carousel1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index_carousel2.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index_carousel3.jpg" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index_carousel4.jpg" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index_carousel5.jpg" alt="Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index_carousel6.jpg" alt="Image 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index_carousel7.jpg" alt="Image 7">
+                </div>
+            </div>
+            <!-- 按鈕 -->
+            <div class="carousel-buttons">
+                <span class="button active" data-slide="0">01</span>
+                <span class="button" data-slide="1">02</span>
+                <span class="button" data-slide="2">03</span>
+                <span class="button" data-slide="3">04</span>
+                <span class="button" data-slide="4">05</span>
+                <span class="button" data-slide="5">06</span>
+                <span class="button" data-slide="6">07</span>
+            </div>
+        </div>
+
+
+        <!----------------- 主選單 --------------------->
+        <nav>
+            <ul>
+                <li><a class="but1" href="index.html">首頁</a></li>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="service.html">攝影項目</a></li>
+                <li><a href="index.html"><img src="./img/logo_white.png" alt=""></a></li>
+                <li><a href="#">流程預約</a></li>
+                <li><a href="#">顧客回饋</a></li>
+                <li><a href="#">預約表單</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="container">
+            <!---------------- slogn+圖 ------------------------->
+
+            <main>
+                <div class="middlepic">
+                    <img class="pic1" src="./img/index_main1.jpg" alt="">
+                    <h1 class="s1">Capturing<br> Moments,</h1>
+                    <img class="pic2" src="./img/index_main2.jpg" alt="">
+                    <h1 class="s2">Creating <br> Memories.</h1>
+                </div>
+            </main>
+
+            <!------------------品牌理念----------------->
+            <div class="content">
+                <img class="contentpic" src="./img/index_main-text1.jpg" alt="">
+                <div class="text">
+                    <img class="logo" src="./img/logo_withchinese.png" alt="">
+                    <h2>品牌理念</h2>
+                    <p>青色是最接近天空的顏色，當你仰望天空的時候，總是會想起一些特別的回憶；<br><br>而我們用相機，在每一次的閃光快門之下，就是一張<br>珍貴的瞬間，將這些寶貴片刻編輯成冊，<br>讓你可以隨時回味翻閱。
+                    </p>
+                    <a class="more-bar" href="#">more<i class="fa-solid fa-arrow-right-long"></i></i></a>
+                </div>
+            </div>
+            <!-- ----------------swiper--------------- -->
+            <div #swiperRef="" class="swiper mySwiper">
+                <h1>Framing Your Story <br> with Light</h1>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/index_swiper1.jpg" alt=""> </div>
+                    <div class="swiper-slide"> <img src="./img/index_swiper2.jpg" alt=""> </div>
+
+                    <div class="swiper-slide">
+                        <video class="video1" loop="ture">
+                            <source src="./img/index_swiper3.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-button1">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </button>
+                        <video src="./img/index_swiper1.jpg"></video>
+                    </div>
+
+                    <div class="swiper-slide"> <img src="./img/index_swiper4.jpg" alt=""> </div>
+                    <div class="swiper-slide"> <img src="./img/index_swiper5.jpg" alt=""> </div>
+                    <div class="swiper-slide"> <img src="./img/index_swiper6.jpg" alt=""> </div>
+                    <div class="swiper-slide"> <img src="./img/index_swiper7.jpg" alt=""> </div>
+                    <div class="swiper-slide"> <img src="./img/index_swiper8.jpg" alt=""> </div>
+                    <div class="swiper-slide">
+                        <video class="video2" loop="ture">
+                            <source src="./img/index_swiper9.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-button2">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <script src="./js/script.js"></script>
+            </div>
+
+            <!-----------------connect------------------->
+            <div class="connect">
+                <ul>
+                    <li><a href="#">認識攝影師</a></li>
+                    <li><a href="#">攝影項目</a></li>
+                    <li><a href="#">預約流程</a></li>
+                </ul>
+            </div>
+
+            <!-------------------service----------------->
+            <div class="service">
+                <ul>
+                    <li class="item1"><a href="#">求婚記錄 <img src="./img/icon_arrow .png" alt=""></a></li>
+                    <li class="item2"><a href="#">婚紗攝影<img src="./img/icon_arrow .png" alt=""></a></li>
+                    <li class="item3"><a href="#">個人寫真<img src="./img/icon_arrow .png" alt=""></a></li>
+                    <li class="item4"><a href="#">旅遊記錄<img src="./img/icon_arrow .png" alt=""></a></li>
+                    <li class="item5"><a href="#">寵物寫真<img src="./img/icon_arrow .png" alt=""></a></li>
+                    <li class="item6"><a href="#">食物攝影<img src="./img/icon_arrow .png" alt=""></a></li>
+                </ul>
+            </div>
+
+            <!------------------contact-------------------->
+
+            <section class="contact">
+                <div class="contact-warp">
+                    <img class="logo" src="./img/logo_text.png" alt="">
+                    <p>不管是在稀鬆不過的平常，或是人生中重要的日子，都能讓我們記錄下來，完整保存進你的回憶天空裡。</p>
+                    <img class="flower" src="./img/index_contact_pic.jpg" alt="">
+                </div>
+                <div class="contact-button">
+                    <a href="#" class="form-link">
+                        <span>預約表單</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span>聯絡我們</span>
+                        <img src="./img/icon_line.png" alt="">
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!---------------footer-------------------->
+        <footer>
+            <div class="footer-warp">
+                <div class="img-group">
+                    <img src="./img/footer1.png" alt="">
+                    <img src="./img/footer2.png" alt="">
+                    <img src="./img/footer3.png" alt="">
+                    <img src="./img/footer4.png" alt="">
+                    <img src="./img/footer5.png" alt="">
+                </div>
+
+                <div class="tool">
+                    <div class="tool-left">
+                        <p>Your Story Through Our Lens</p>
+                        <div class="foot-button">
+                            <a href="#" class="foot-form">
+                                <span>預約表單</span>
+                            </a>
+                            <a href="#" class="foot-contact">
+                                <span>聯絡我們</span>
+                                <img src="./img/icon_line.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tool-center">
+                        <img src="./img/logo_white.png" alt="">
+                        <social-media>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-line"></i></a>
+                        </social-media>
+                    </div>
+
+                    <div class="tool-right">
+                        <div class="tool-a-warp">
+                            <a href="#">關於我們</a>
+                            <a href="#">攝影項目</a>
+                            <a href="#">預約流程</a>
+                            <a href="#">顧客回饋</a>
+                            <a href="#">預約表單</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <small>
+            <p>
+                © 本網站為緯育TibaMe【第93期】前端工程師專業技術養成班學員作 品,僅供學習、展示之用途。
+            </p>
+        </small>
+
+    </div>
+</body>
+
+</html>
