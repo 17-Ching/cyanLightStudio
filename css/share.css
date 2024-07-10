@@ -1,18 +1,18 @@
 @import url("reset.css");
 
- body {
+body {
     font-family: "Noto Serif TC", serif;
     font-weight: 500;
     font-style: normal;
     font-optical-sizing: auto;
 }
 
-.warpper{
+.wrapper {
     width: 100%;
     background-color: #008C91;
 }
 
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -20,13 +20,13 @@
 
 
 /* --------------nav-------------- */
-nav{
+nav {
     padding: 0 178px;
     background-color: #004257;
 }
 
-nav ul{
-    
+nav ul {
+
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -37,24 +37,24 @@ nav ul{
     padding: 5px 0;
 }
 
-nav li{
+nav li {
     /* border: 2px solid green; */
     flex-grow: 1;
     position: relative;
 }
 
-nav img{
-    width: 70px;
+nav img {
+    width: 50px;
     margin-top: 10px;
-    object-fit:cover;
+    object-fit: cover;
     overflow: hidden;
 }
 
-nav a{
+nav a {
     /* border: 2px solid green; */
     text-decoration: none;
     color: #FFF9E6;
-    font-size: 16px ;
+    font-size: 16px;
     font-weight: 700;
     line-height: 42px;
     text-align: center;
@@ -63,7 +63,7 @@ nav a{
     transition: .5s;
 }
 
-nav li::before{
+nav li::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -73,38 +73,38 @@ nav li::before{
     background-color: #FF9800;
     transition: .3s;
     display: block;
-  }
+}
 
 nav li:nth-child(4)::before {
     display: none;
 }
 
 
-  nav li:hover::before {
+nav li:hover::before {
     width: 100%;
     left: 0;
-  }
+}
 
-nav a:hover{
+nav a:hover {
     color: #FF9800;
 }
 
 
 
 /* -------------footer-------------- */
-footer{
+footer {
     background-color: #67401E;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.footer-warp{
+.footer-wrap {
     /* border: 2px solid red;  */
     max-width: 800px;
     margin: 0 auto;
 }
 
-.footer-warp .img-group{
+.footer-wrap .img-group {
     width: 650px;
     /* border: 2px solid green;  */
     margin: 0 auto;
@@ -113,11 +113,11 @@ footer{
     padding-bottom: 50px;
 }
 
-.img-group img{
+.img-group img {
     width: 120px;
 }
 
-.tool{
+.tool {
     /* border: 2px solid rebeccapurple;  */
     display: flex;
     margin-top: 50px;
@@ -128,7 +128,7 @@ footer{
 
 /* ----左邊工具列---- */
 
-.tool-left{
+.tool-left {
     flex-basis: 0;
     /* border: 2px solid yellow;  */
     padding-top: 20px;
@@ -136,30 +136,30 @@ footer{
     flex-basis: 0;
 }
 
-.tool-left p{
+.tool-left p {
     font-size: 14px;
     color: #FFF9E6;
     text-align: center;
     margin-bottom: 15px;
 }
 
-.tool-left .foot-button{
+.tool-left .foot-button {
     /* border: 2px solid blue;  */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    
+
 }
 
-.tool-left .foot-form{
+.tool-left .foot-form {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none; 
-    background-color: #FF9800; 
-    padding: 10px; 
+    text-decoration: none;
+    background-color: #FF9800;
+    padding: 10px;
     width: 100px;
     height: 10px;
     border-radius: 0;
@@ -167,43 +167,43 @@ footer{
     margin-bottom: 10px;
 }
 
-.tool-left span{
-    font-size: 12px; 
-    color: white; 
+.tool-left span {
+    font-size: 12px;
+    color: white;
 }
 
-.tool-left .foot-contact{
+.tool-left .foot-contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none; 
-    background-color: #FF9800; 
-    padding: 10px; 
+    text-decoration: none;
+    background-color: #FF9800;
+    padding: 10px;
     width: 100px;
     height: 10px;
     border-radius: 0;
     transition: .5s;
 }
 
-.tool-left .foot-contact img{
-    margin-left: 4px; 
+.tool-left .foot-contact img {
+    margin-left: 4px;
     width: 16px;
     height: 14px;
 }
 
-.tool-left .foot-form:hover{
+.tool-left .foot-form:hover {
     background-color: #004257;
 }
 
-.tool-left .foot-contact:hover{
+.tool-left .foot-contact:hover {
     background-color: #004257;
 }
 
 /* ---------中間工具列------------ */
 
-.tool-center{
+.tool-center {
     /* border: 2px solid rgb(0, 255, 242);  */
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding-top: 20px;
     border-left: 1px solid white;
@@ -212,51 +212,51 @@ footer{
     flex-grow: 1;
 }
 
-.tool-center img{
+.tool-center img {
     width: 80px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
-social-media{
-    
+social-media {
+
     width: 176px;
     /* border: 2px solid rgb(255, 6, 172); */
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-social-media a{
+social-media a {
     text-decoration: none;
 }
 
-social-media i{
+social-media i {
     color: #FFF9E6;
     transition: .5s;
 }
 
-social-media a:hover i{
+social-media a:hover i {
     color: #FF9800;
 }
 
 /* ----------右邊工具列------------ */
 
-.tool-right{
+.tool-right {
     /* border: 2px solid rgb(255, 48, 141);  */
     flex-wrap: wrap;
     /* width: 120px; */
     flex-basis: 0;
     flex-grow: 1;
-    
+
 }
 
-.tool-right .tool-a-warp{
+.tool-right .tool-a-wrap {
     width: 120px;
     margin: 0 auto;
 }
 
-.tool-right a{
+.tool-right a {
     /* border: 2px solid green;  */
     margin-left: 5px;
     text-decoration: none;
@@ -265,7 +265,7 @@ social-media a:hover i{
     line-height: 4;
 }
 
-.tool-right a:hover{
+.tool-right a:hover {
     text-decoration: underline;
 }
 
@@ -273,12 +273,9 @@ social-media a:hover i{
 
 /* ---------版權宣告-------------- */
 
-small{
-    
-    
-}
+small {}
 
-small p{
+small p {
     background-color: #001F28;
     color: #FFF9E6;
     font-size: 10px;

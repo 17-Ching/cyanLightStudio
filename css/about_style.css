@@ -1,0 +1,278 @@
+/* --------首圖----------- */
+
+header {
+    /* border: 2px solid red; */
+    background-image: url(.././img/about_bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+}
+
+.title{
+    /* border: 2px solid red; */
+    width: 800px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid #FF9800;
+    border-right: 4px solid #FF9800;
+    border-left: 4px solid #FF9800;
+    
+}
+
+.title h1{
+    /* border: 2px solid green; */
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 5.5px rgba(0, 0, 0, 0.72);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 165%; 
+    letter-spacing: 15px;
+
+}
+
+.title h2{
+    /* border: 2px solid yellow; */
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 5.5px rgba(0, 0, 0, 0.72);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%; 
+    letter-spacing: 8px;
+}
+
+/* ------------品牌理念-------------- */
+
+.content{
+    /* border: 2px solid red;  */
+    width: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.content main{
+    /* border: 2px solid green;  */
+    width: 800px;
+    border-right: 4px solid #008C91;
+    border-bottom: 4px solid #008C91;
+    border-left: 4px solid #008C91;
+    margin-bottom: 50px;
+    
+}
+
+.content p{
+    color: var(--font-dark, #333);
+    text-align: center;
+    font-size: 16x;
+    font-weight: 500;
+    line-height: 200%; 
+    margin: 50px 150px 50px
+}
+
+.content img{
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ------------攝影師介紹-------------- */
+
+.intro{
+    margin: 50px auto;
+}
+
+/* --p1-- */
+
+.person1{
+    /* border: 2px solid red;  */
+    padding-bottom: 50px;
+}
+
+.person1 .card1{
+    /* border: 2px solid green;  */
+    display: flex;
+    position: relative;
+}
+.card1 h1{
+    color:#001F28;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 165%; 
+    letter-spacing: 15.36px;
+    opacity: 0.4;
+    position: absolute;
+    right:150px;
+    top: 0;
+    z-index: 10;
+}
+
+.card1 picture{    
+    /* border: 2px solid yellow;  */
+    position: relative;
+    margin-left: 220px;
+}
+
+.card1 .pic1{
+    width: 240px;
+    border-radius: 120px;
+    position: absolute;
+    right: -110px;
+    top: 110px;
+}
+
+.card1 .bg1{
+    width: 320px;
+}
+
+.card1 .text{
+    /* border: 2px solid blue; */
+    margin: 110px 200px 100px 130px;
+}
+
+.card1 h2{
+    color: #FAFAFA;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 165%;
+    letter-spacing: 2.56px;
+    margin-bottom: 20px;
+}
+
+.card1 p{
+    color:#FFF9E6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+/* -p2- */
+
+.person2{
+    padding:50px 0;
+    background-color:#975F2F;
+    /* border: 2px solid red;  */
+    
+}
+
+.person2 .card2{
+    /* border: 2px solid green;  */
+    display: flex;
+    position: relative;
+}
+.card2 h1{
+    color:#001F28;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 165%; 
+    letter-spacing: 15.36px;
+    opacity: 0.4;
+    position: absolute;
+    left:180px;
+    top: 0;
+    z-index: 10;
+}
+
+.card2 picture{    
+    /* border: 2px solid yellow;  */
+    position: relative;
+    margin-right: 220px;
+    order: 2;
+}
+
+.card2 .pic2{
+    width: 240px;
+    border-radius: 120px;
+    position: absolute;
+    left: -110px;
+    top: 110px;
+    z-index: 10;
+}
+
+.card2 .video2{
+    width: 320px;
+}
+
+.play-button1 {
+    border: none;
+    z-index: 9;
+    position: absolute;
+    background-color: #ffffff00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF9800;
+    cursor: pointer;
+    font-size: 100px;
+}
+
+
+.card2 .text{
+    /* border: 2px solid blue; */
+    margin: 110px 130px 100px 210px;
+    order:1;
+}
+
+.card2 h2{
+    color: #FAFAFA;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 165%;
+    letter-spacing: 2.56px;
+    margin-bottom: 20px;
+}
+
+.card2 p{
+    color:#FFF9E6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+/* -----------more bar------------ */
+
+.more{
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.more a{
+    /* border: 2px solid red; */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 60px;
+    background-color: #FF9800;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    transition: .5s;
+}
+
+.more a:hover {
+    border-radius: 15px;
+    background-color: #004257;
+}
+
+.more span{
+    font-size: 24px;
+    color: white;
+}
+
+.more img{
+    margin-top: 10px;
+    align-self: end;
+    width: 100px;
+    margin-right: 15px;
+}

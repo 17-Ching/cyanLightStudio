@@ -143,7 +143,7 @@ main {
     align-items: center;
 }
 
-.card1 .view-warp {
+.card1 .view-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -198,7 +198,7 @@ main {
     align-items: center;
 }
 
-.card2 .view-warp {
+.card2 .view-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -252,7 +252,7 @@ main {
     align-items: center;
 }
 
-.card3 .view-warp {
+.card3 .view-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -306,7 +306,7 @@ main {
     align-items: center;
 }
 
-.card4 .view-warp {
+.card4 .view-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -360,7 +360,7 @@ main {
     align-items: center;
 }
 
-.card5 .view-warp {
+.card5 .view-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -414,7 +414,7 @@ main {
     align-items: center;
 }
 
-.card6 .view-warp {
+.card6 .view-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
