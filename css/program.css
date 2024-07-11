@@ -160,11 +160,15 @@ header .title:hover{
     /* border: 2px solid purple;  */
     width: 240px;
     height: 480px;
-    background: #fafaface;
+    background: #fafafa7a;
     display: flex;
     flex-direction: column;
     /* margin-right: 20px;    */
+    transition: .5s;
+}
 
+.flow li:hover{
+    background-color: #fafafa;
 }
 
 .flow .step{

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <link rel="stylesheet" href="./css/share.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <!------------字體--------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!------------font awesome---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!----------------- 主選單 --------------------->
+        <nav>
+            <ul>
+                <li><a class="but1" href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="service.html">攝影項目</a></li>
+                <li><a href="index.html"><img src="./img/logo_white.png" alt=""></a></li>
+                <li><a href="program.html">流程預約</a></li>
+                <li><a href="feedback.html">顧客回饋</a></li>
+                <li><a href="contect.html">預約表單</a></li>
+            </ul>
+        </nav>
+    
+        <!----------------header-------------------->
+        <header>
+          <h1>預約表單</h1>
+          <h2>contact</h2>
+        </header>
+        <!---------------content------------------>
+        
+    <div class="container">
+        <div class="text">
+            <p class="p1">填寫線上表單，我們會盡快與您聯繫!</p>
+            <wrap>
+                <p class="p2">也可以透過官方Line</p>
+                <a href="#" class="but">
+                    <span>聯絡我們</span>
+                    <img src="./img/icon_line.png" alt="">
+                </a>
+            </wrap>
+        </div>
+
+        <div class="form">
+
+            <ul>
+                <!-- 姓名 -->
+                <li>
+                    <label for="name">
+                        <p>姓名*</p>
+                      </label>
+                      <input id="name" type="text" class="name" placeholder="ex.王小明">
+                </li>
+                
+                <!-- 電話 -->
+                <li>
+                <label for="phone">
+                    <p>手機號碼 or Line ID</p>
+                  </label>
+                  <input id="phone" type="text" class="phone" placeholder="ex.0932123456">
+                </li>
+
+                <!-- email -->
+                <li>
+                    <label for="email">
+                        <p>E-MAIL*</p>
+                      </label>
+                      <input id="email" type="text" class="email" >
+                    </li>
+                </li>
+
+                <!-- 預計拍攝日 -->
+                <li>
+                    <label for="date">
+                        <p>預計拍攝時間*</p>
+                      </label>
+                      <input id="date" type="text" class="date" placeholder=" ex.2024/10">
+                </li>
+
+                <!-- 地點 -->
+                <li>
+                    <label for="place">
+                        <p>期望的拍攝地點*</p>
+                      </label>
+                      <input id="place" type="text" class="place" placeholder=" ex.海邊﹑公園...">
+                </li>
+
+                <!-- 項目 -->
+                <li>
+                        <p class="check">想拍攝的項目*</p>
+
+                    <input type="checkbox" name="item" value="1" id="item1" >
+                    <label for="item1" class="item">婚紗攝影</label>
+
+                    <input type="checkbox" name="item" value="2" id="item2" >
+                    <label for="item2" class="item">求婚紀錄</label>
+
+                    <input type="checkbox" name="item" value="3" id="item3" >
+                    <label for="item3" class="item">個人寫真</label>
+
+                    <input type="checkbox" name="item" value="4" id="item4" >
+                    <label for="item4" class="item">旅遊紀錄</label>
+
+                    <input type="checkbox" name="item" value="5" id="item5" class="item">
+                    <label for="item5" class="item">寵物寫真</label>
+                    <br><br>
+                    <input type="checkbox" name="item" value="6" id="item6" >
+                    <label for="item6" class="item">食物攝影</label>
+
+                    <!-- 留言-->
+                    <li>
+                        <p>想說的話</p>
+                        <textarea></textarea>
+                    </li>
+
+
+                    <!-- 送出 -->
+                    <li>
+                        <input type="submit" class="send" value="送出">
+                    </li>
+
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+            <!---------------footer-------------------->
+            <footer>
+                <div class="footer-wrap">
+                    <div class="img-group">
+                        <img src="./img/footer1.png" alt="">
+                        <img src="./img/footer2.png" alt="">
+                        <img src="./img/footer3.png" alt="">
+                        <img src="./img/footer4.png" alt="">
+                        <img src="./img/footer5.png" alt="">
+                    </div>
+        
+                    <div class="tool">
+                        <div class="tool-left">
+                            <p>Your Story Through Our Lens</p>
+                            <div class="foot-button">
+                                <a href="contect.html" class="foot-form">
+                                    <span>預約表單</span>
+                                </a>
+                                <a href="#" class="foot-contact">
+                                    <span>聯絡我們</span>
+                                    <img src="./img/icon_line.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="tool-center">
+                            <img src="./img/logo_white.png" alt="">
+                            <social-media>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-line"></i></a>
+                            </social-media>
+                        </div>
+        
+                        <div class="tool-right">
+                            <div class="tool-a-wrap">
+                                <a href="index.html">首頁</a>
+                                <a href="about.html">關於我們</a>
+                                <a href="service.html">攝影項目</a>
+                                <a href="program.html">預約流程</a>
+                                <a href="feedback.html">顧客回饋</a>
+                                <a href="contect.html">預約表單</a>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </footer>
+            <small>
+                <p>
+                    © 本網站為緯育TibaMe【第93期】前端工程師專業技術養成班學員作 品,僅供學習、展示之用途。
+                </p>
+            </small>
+    
+    </div>
+
+
+    
+</body>
+</html>

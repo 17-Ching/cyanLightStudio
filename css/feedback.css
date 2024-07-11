@@ -43,6 +43,13 @@ header h1{
     border: 2px solid #333;
     background: #FFF;
     margin-bottom: 50px;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.container li:hover{
+    transform: scale(1.1);
+    
 }
 
 .container img{
@@ -55,14 +62,16 @@ header h1{
     flex-direction: column;
     margin-left: 50px;
 /* align-items: flex-end; */
+
 }
 
 .testarea .tag{
     margin: 15px 15px 0 0;
     display: flex;
     justify-content: end;
-    
 }
+
+
 
 .tag a{
     text-decoration: none;
@@ -73,8 +82,10 @@ header h1{
     letter-spacing: 0.56px;
     border-radius: 16px;
     padding: 5px 10px;
-    
-    
+}
+
+.tag a:hover{
+    background-color: #333;
 }
 
 .date{
@@ -100,6 +111,14 @@ header h1{
     margin-bottom: 16px;
 }
 
+.testarea a{
+    text-decoration: none;
+}
+
+.testarea a:hover{
+    text-decoration: underline;
+}
+
 .testarea .content{
     /* border: 2px solid red;  */
 
@@ -115,6 +134,8 @@ header h1{
 }
 
 .morebar{
+    /* border: 2px solid green;  */
+
     /* text-align: right; */
      display: flex;
     flex-direction: column;
@@ -124,6 +145,8 @@ header h1{
 } 
 
 .morebar a{
+    /* border: 2px solid green;  */
+    
     color:  #A9A9A9;
     font-size: 12px;
     font-weight: 700;
