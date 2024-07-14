@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+  </head>
+  <style>
+  .slick-arrow:before { 
+    color: #000 !important;
+  }
+  .slick-slide.slick-center img {
+        transform: scale(1.1);
+        margin-left: auto; margin-right: auto;
+  }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      })
+    });
+  </script>
+  <body>
+    <div class="slider">
+      <div class="slider__item"><img src="https://pp.userapi.com/c849132/v849132998/45c5c/RSTineyyvfE.jpg" alt=""></div>
+      <div class="slider__item"><img src="https://pp.userapi.com/c849132/v849132998/45c5c/RSTineyyvfE.jpg" alt=""></div>
+      <div class="slider__item"><img src="https://pp.userapi.com/c849132/v849132998/45c5c/RSTineyyvfE.jpg" alt=""></div>
+      <div class="slider__item"><img src="https://pp.userapi.com/c849132/v849132998/45c5c/RSTineyyvfE.jpg" alt=""></div>
+      <div class="slider__item"><img src="https://pp.userapi.com/c849132/v849132998/45c5c/RSTineyyvfE.jpg" alt=""></div>
+      <div class="slider__item"><img src="https://pp.userapi.com/c849132/v849132998/45c5c/RSTineyyvfE.jpg" alt=""></div>
+    </div>
+  </body>
+</html>

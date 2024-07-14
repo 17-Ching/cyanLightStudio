@@ -14,20 +14,20 @@ body {
 
 /* ----首圖輪播---- */
 
-.carousel {
+.carousel {   /*--div--*/
     position: relative;
     width: 100%;
     max-height: 600px;
     overflow: hidden;
 }
 
-.carousel-inner {
+.carousel-inner {  /*--ul--*/
     height: 100%;
     display: flex;
     transition: transform 0.5s ease;
 }
 
-.carousel-item {
+.carousel-item {  /*--li--*/
     min-width: 100%;
     height: 100%;
 }
@@ -211,6 +211,7 @@ main .s2 {
     background-color: #975F2F;
     box-sizing: border-box;
     position: relative;
+    margin-bottom: 0;
 }
 
 .swiper h1 {
@@ -226,9 +227,11 @@ main .s2 {
 
 .swiper-slide {
     margin-bottom: 50px;
-    margin-top: 168px;
+    margin-top: 88px;
     display: flex;
-    max-height: 400px;
+    max-height:600px;
+    scale: .8;
+
     text-align: center;
     background: #fff;
     /* border: 2px solid rgb(6, 255, 114); */
@@ -241,9 +244,8 @@ main .s2 {
 .swiper-slide-active {
     /* border: 2px solid rgb(255, 6, 184); */
     max-height: 600px;
-    margin-top: 50px;
-
-
+    /* margin-top: 50px; */
+    scale: 1;
 }
 
 .swiper-slide img {
@@ -259,6 +261,7 @@ main .s2 {
     display: block;
     width: 100%;
     height: 100%;
+    /* max-height: 600px; */
     object-fit: cover;
     position: relative;
 }
@@ -295,7 +298,27 @@ main .s2 {
     display: none;
 }
 
-/* ----------------connect---------------- */
+.swiper-button-next, .swiper-button-prev{
+    --swiper-theme-color: #ff990000;
+    background-image: url('../img/icon_arrow\ .png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    --swiper-navigation-size: 30%;
+    --swiper-navigation-top-offset:116%;
+}
+
+.swiper-button-next{
+    margin-right: 5%;
+}
+
+
+.swiper-button-prev{
+    margin-left: 5%;
+    transform: rotateY(180deg);
+}
+
+
+/* ----------------connect----------------*/
 
 .connect {
     height: 300px;
@@ -310,7 +333,7 @@ main .s2 {
     justify-content: space-between;
     margin: auto;
     /* border: 2px solid red; */
-}
+} 
 
 .connect li {
     /* border-right:  1px solid #FFF9E6; */
