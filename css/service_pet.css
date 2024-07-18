@@ -1,3 +1,7 @@
+.wrapper{
+    background-color: #008C91;
+}
+
 header {
     /* border: 2px solid red; */
     background-image: url(.././img/pet_head.jpg);
@@ -186,48 +190,50 @@ iframe{
     right: -9%;
   }
 
-/* --------輪播---------- */
-.carousel {
-    background-color: #fff;
+/* ------------swiper---------- */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    box-sizing: border-box;
+    /* background-color: #fff; */
+    margin-bottom: 50px;
+
+    
   }
 
-.sliderBoard{
-    /* border: 2px solid yellow;  */
-
-    background-color: white;
-    padding: 50px 0;
-    /* width:80%; */
-	height: 550px; 
-	/* margin: 50px auto; */
-    position: relative;
+  .swiper-wrapper{
+    /* border: 2px solid rgb(255, 6, 6); */
 
 
-	overflow: hidden;
-}
+  }
 
-.carousel ul {
-    /* border: 2px solid green;  */
+  .swiper-slide {
+    /* border: 2px solid rgb(6, 255, 114); */
+    padding-bottom: 50px;
+    margin-top: 50px;
+    max-width: 400px;
+    max-height:550px;
+    overflow: hidden;
+    text-align: center;
     display: flex;
-    flex-direction: row;
-    animation: swrip 20s linear infinite ;
-    position: absolute;
-	right: 0;
-	bottom: 70px;
+    justify-content: center;
+    align-items: center;
+
   }
 
-  .carousel li{
-    float: left;
-    
-  }
-
-.carousel .image{
-    
-	height: 500px;
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin-right: 10px;
-}
+  }
 
-@keyframes swrip{
-    0% {left: 0;}
-    100% {left: -200%;}
-}
+  .swiper-pagination-bullet{
+    --swiper-theme-color: #FF9800;
+  }
+
+
+
+

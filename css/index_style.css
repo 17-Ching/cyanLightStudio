@@ -61,6 +61,7 @@ body {
     border-bottom: 1px solid #ff9900;
 }
 
+
 /* ---------container----------- */
 
 
@@ -88,6 +89,7 @@ main .middlepic {
     text-align: center;
     position: relative;
     backdrop-filter: blur(5px);
+    /* opacity: 0; */
     
 
 }

@@ -126,4 +126,28 @@ video2.addEventListener("click", () => {
     }
 });
 
+// ---------------------scroll------------------//
+
+
+$(function () {
+    let showHeight = 250;
+
+    $(window).scroll(function(){
+        $('.main .middlepic').each(function(){
+            let setThis = $(this)
+            let areaTop = setThis.offest().top
+
+            if($(document).scrollTop() >= (areaTop + showHeight) - $(window).height()){
+                setThis.stop().animate({
+                    opacity: 1,
+                }, 800)
+            }else{
+                setThis.stop().animate({
+                    opacity: 0,
+                },500)
+        }
+    })
+    })
+
+})
 

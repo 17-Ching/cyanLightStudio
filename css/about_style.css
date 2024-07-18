@@ -2,7 +2,7 @@
 
 header {
     /* border: 2px solid red; */
-    background-image: url(.././img/about_bg.jpg);
+    background-image: url(.././img/about_head.jpg);
     background-size: cover;
     width: 100%;
     height: 600px;
@@ -55,18 +55,40 @@ header {
     /* border: 2px solid red;  */
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items:start;
     justify-content: center;
-    background-color: #fff;
+    position: relative;
+    
+    
+}
+
+.content::before{
+    content: '';
+    background-image: url(../img/about_bg.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    /* height: 300px; */
+    width: 100%;
+    opacity: 0.08;
+    position: absolute;
+    top: -328px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .content main{
     /* border: 2px solid green;  */
     width: 800px;
-    border-right: 4px solid #008C91;
+    /* border-right: 4px solid #008C91;
     border-bottom: 4px solid #008C91;
-    border-left: 4px solid #008C91;
+    border-left: 4px solid #008C91; */
     margin-bottom: 50px;
+    margin: 0 auto;
+
     
 }
 
@@ -79,16 +101,27 @@ header {
     margin: 50px 150px 50px
 }
 
-.content img{
+.content .icon{
     width: 130px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.about_main{
+    margin: 0 auto;
+    display: block;
+    width: 1000px;
+    margin-bottom: 100px;
 }
 
 /* ------------攝影師介紹-------------- */
 
 .intro{
-    margin: 50px auto;
+    /* border: 2px solid green;  */
+    background-color: #008C91;
+    padding-top: 50px;
+    
 }
 
 /* --p1-- */
@@ -96,6 +129,7 @@ header {
 .person1{
     /* border: 2px solid red;  */
     padding-bottom: 50px;
+    background-color: #008C91;
 }
 
 .person1 .card1{
@@ -242,7 +276,8 @@ header {
 
 .more{
     margin: 0 auto;
-    margin-bottom: 150px;
+    padding: 100px 0;
+    background-color: #008C91;
 }
 
 .more a{

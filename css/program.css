@@ -160,7 +160,7 @@ header .title:hover{
     /* border: 2px solid purple;  */
     width: 240px;
     height: 480px;
-    background: #fafafa7a;
+    background: #fafafacc;
     display: flex;
     flex-direction: column;
     /* margin-right: 20px;    */
@@ -184,7 +184,7 @@ header .title:hover{
 .step h2{
     color:#ff9900d2;
     text-align: right;
-    font-size: 28px;
+    font-size: 48px;
     font-weight: 600;
     line-height: 140%;
     margin-right: 10px;
@@ -197,10 +197,29 @@ header .title:hover{
     align-content: center;
     align-self: stretch;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
-.step .icon1{}
+.step i{
+    margin-top: 40px;
+    display: block;
+    color: #FF9800;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flow li:hover i{
+    animation: shake 1.5s linear infinite;
+}
+
+@keyframes shake{
+    0%, 100% {transform: rotate(0deg);}
+    10%, 90% {transform: rotate(10deg);}
+    20%, 80% {transform: rotate(0deg);}
+    30%, 70%{transform: rotate(-10deg);}
+    40%, 60%  {transform: rotate(0deg);}
+    50% {transform: rotate(10deg);}
+}
 
 .step h1{
     color:#975F2F;

@@ -1,8 +1,15 @@
+
+
+.wrapper{
+    background-color: #008C91;
+}
+
 header{
     /* border: 2px solid red;  */
     width: fit-content;
     margin: 0 auto;
     padding-top: 150px;
+    /* background-color: #008C91; */
     
 }
 
@@ -39,6 +46,7 @@ header h2{
     padding-left: 220px;
     margin-top: 150px;
     margin-bottom: 150px;
+    /* background-color: #008C91; */
 }
 
 /* ----文字----- */
@@ -98,7 +106,7 @@ header h2{
 
 .container .form{
     border: 1px solid #FFF9E6; 
-    width: 600px;
+    max-width: 600px;
     background-color: #975F2F;
     margin: 0 auto 120px;
     position: relative;
@@ -255,3 +263,11 @@ textarea {
 
 
 
+/* --------------RWD--------------*/
+
+@media screen and (max-width: 430px) {
+    
+    .container{
+        padding:10px;
+    }
+}
