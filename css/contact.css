@@ -15,7 +15,7 @@ header{
 
 header h1{
     color: #FAFAFA;
-    font-size: 58px;
+    font-size: 3.625rem;
     font-weight: 700;
     /* line-height: 165%;  */
     letter-spacing: 2.56px;
@@ -29,7 +29,7 @@ header h2{
     padding: 20px 80px 0;
     text-align: center;
     color: #FFF9E6;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     /* line-height: 140%;  */
     letter-spacing: 1.92px;
@@ -43,7 +43,8 @@ header h2{
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: 180px 0;
-    padding-left: 220px;
+    padding-left: 10%;
+    padding-right: 5%;
     margin-top: 150px;
     margin-bottom: 150px;
     /* background-color: #008C91; */
@@ -53,8 +54,12 @@ header h2{
 
 .container .text{
     /* border: 2px solid green;  */
-    width: fit-content;
+    max-width: 600px;
     margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
 }
 
 .text .p1{
@@ -248,8 +253,8 @@ textarea {
     cursor: pointer;
 
     position: absolute;
-    left: 230px;
-    bottom: -70px;
+    left: 30%;
+    bottom: -10%;
 }
 
 .form .send:hover{
@@ -265,9 +270,18 @@ textarea {
 
 /* --------------RWD--------------*/
 
+@media screen and (max-width: 820px){
+    
+    /* header h1{
+        font-size: 3rem;
+    } */
+}
+
 @media screen and (max-width: 430px) {
     
     .container{
         padding:10px;
     }
+
+
 }

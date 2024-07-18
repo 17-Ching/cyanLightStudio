@@ -1,11 +1,15 @@
 @import url("reset.css");
 
+html{
+    font-size: 100%;
+}
+
 body {
     font-family: "Noto Serif TC", serif;
     font-weight: 500;
     font-style: normal;
     font-optical-sizing: auto;
-    font-size: 100%;
+    
 }
 
 .wrapper {
@@ -307,14 +311,6 @@ small p {
     line-height: 40px;
 }
 
-.bar{
-    width: 36px;
-    height: 4px;
-    background-color: #FF9800;
-    margin: 6px 0;
-    border-radius: 2px;
-    display: none;
-}
 
 .menu.active .bar1{ transform: rotate(-45deg) translate(-9px, 7px);}
 .menu.active .bar2{opacity: 0;}
@@ -324,22 +320,24 @@ small p {
 
 @media screen and (max-width: 820px){ 
 
-    body{
+    html{
         font-size: 80%;
     }
     
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
 
     /* ----------nav------------- */
+
+  
 
     .transition{
         transition: 0.5s;
     }
 
     .menu{
-        background-color: #001F28;
+        background-color: #004257;
 		height: 60px;
 		padding: 0 20px;
 		box-sizing: border-box;
@@ -349,22 +347,25 @@ small p {
 		width: 100%;
     }
 
-    /* .menu.active{
-        background-color: #fff;
-    } */
 
     .menu ul{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         flex-direction: column;
 		position: absolute;
 		background-color: #333333;
 		left: 0;
 		top: 60px;
 		width: 100%;
-        height: 600px;
+        height: 0;
         overflow: hidden;
         
-		/* display: none; */
+        opacity: 0;
+    }
+
+    .menu.active ul{
+        
+        height: 600px;
+        opacity: 1;
     }
 
     nav .logo1{
@@ -411,7 +412,7 @@ small p {
     }
 
     nav .nav_but{
-        font-size: 150%;
+        font-size: 1.6rem;
         width: 100%;
         height: 100%;
         line-height: 100px;
@@ -426,17 +427,16 @@ small p {
     }
 
     .bar{
-        display: block;
-        /* width: 36px;
+        width: 36px;
         height: 4px;
         background-color: #FF9800;
         margin: 6px 0;
-        border-radius: 2px; */
+        border-radius: 2px;
     }
     
     .menu.active .bar1{ transform: rotate(-45deg) translate(-9px, 7px);}
     .menu.active .bar2{opacity: 0;}
-    .menu.active .bar3{transform: rotate(45deg) translate(-9px, -8px);}
+    .menu.active .bar3{transform: rotate(45deg) translate(-7px, -5px);}
 
 
 
