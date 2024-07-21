@@ -333,7 +333,12 @@ small p {
     }
 
     .transition{
-        transition: 0.5s;
+        transition: opacity 0.5s;
+        
+    }
+
+    .transition2{
+        transition: transform 0.5s ;
     }
 
     .menu{

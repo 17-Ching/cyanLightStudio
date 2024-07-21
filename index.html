@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!------------jQuery--------------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script> 
+    <script src="./js/jQuery/jquery-3.7.1.js"></script>
 
 </head>
 
@@ -70,16 +70,30 @@
 
         <!----------------- 主選單 --------------------->
         
-        <nav id="index_nav">
-            <ul>
-                <li><a class="but1" href="index.html">首頁</a></li>
-                <li><a href="about.html">關於我們</a></li>
-                <li><a href="service.html">攝影項目</a></li>
-                <li><a href="index.html"><img src="./img/logo_white.png" alt=""></a></li>
-                <li><a href="program.html">流程預約</a></li>
-                <li><a href="feedback.html">顧客回饋</a></li>
-                <li><a href="contect.html">預約表單</a></li>
-            </ul>
+        <nav>
+            <div class="menu transition">
+                <div class="hamwrap">
+
+                    <a href="index.html"><img class="nav_logo2" src="./img/logo_white.png" alt=""></a>
+                    <div class="nav_bar">
+                        <div class="bar bar1 transition2"></div>
+                        <div class="bar bar2 transition2"></div>
+                        <div class="bar bar3 transition2"></div>
+                    </div>
+                    
+                </div>
+                <ul class="transition">
+                    <li><a class="nav_but" href="index.html">首頁</a></li>
+                    <li><a class="nav_but" href="about.html">關於我們</a></li>
+                    <li><a class="nav_but" href="service.html">攝影項目</a></li>
+                    <li><a class="nav_but" href="index.html"><img class="logo1" src="./img/logo_white.png" alt=""></a></li>
+                    <li><a class="nav_but" href="program.html">流程預約</a></li>
+                    <li><a class="nav_but" href="feedback.html">顧客回饋</a></li>
+                    <li><a class="nav_but" href="contect.html">預約表單</a></li>
+                </ul>
+            </div>
+            <script src="./js/nav.js"></script>
+
         </nav>
        
 

@@ -159,7 +159,7 @@ header h2{
     border: none;
 	border-bottom: 1px solid white;
 	outline: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .form .email{
@@ -170,7 +170,7 @@ header h2{
     border: none;
 	border-bottom: 1px solid white;
 	outline: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .form .date{
@@ -181,7 +181,7 @@ header h2{
     border: none;
 	border-bottom: 1px solid white;
 	outline: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .form .place{
@@ -192,7 +192,7 @@ header h2{
     border: none;
 	border-bottom: 1px solid white;
 	outline: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .form .place{
@@ -203,13 +203,13 @@ header h2{
     border: none;
 	border-bottom: 1px solid white;
 	outline: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .form .item{
-    margin-right: 10px;
+    /* margin-right: 10px; */
     color: #FFF9E6;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -251,8 +251,8 @@ textarea {
     font-size: 18px;
     font-weight: 700;
     line-height: 140%; /* 33.6px */
-    height: 40px;
-    width: 160px;
+    max-height: 40px;
+    max-width: 160px;
     background-color: #FF9800;
     cursor: pointer;
 
@@ -270,7 +270,68 @@ textarea {
 
 }
 
+.checkbox_item{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.item {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.item input[type=checkbox] {
+    visibility: hidden;
+}
+
+.checkbox-container {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid #FFF9E6;
+    border-radius: 50%;
+}
+
+/* Hover effect */
+/* .item:hover input~.checkbox-container {
+    background-color: yellow;
+} */
+
+/* Active effect */
+/* .item input:active~.checkbox-container {
+    background-color: red;
+} */
+
+/* Checked effect */
+.item input:checked~.checkbox-container {
+    background-color: #FF9800;
+}
+
+/* Checkmark */
+.checkbox-container::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 8px;
+    top: -3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Display checkmark when checked */
+.item input:checked~.checkbox-container::after {
+    display: block;
+}
 
 /* --------------RWD--------------*/
 
@@ -279,6 +340,9 @@ textarea {
     /* header h1{
         font-size: 3rem;
     } */
+    .form p{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -286,6 +350,8 @@ textarea {
     .container{
         padding:10px;
     }
+
+    
 
 
 }
