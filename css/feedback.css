@@ -117,12 +117,15 @@ header h1 {
     margin-bottom: 16px;
 }
 
-.testarea a {
+.testarea .title {
     text-decoration: none;
+    text-decoration-color: #ff990000;
+    transition: .5s;
 }
 
-.testarea a:hover {
+.testarea .title:hover {
     text-decoration: underline;
+    text-decoration-color: #ff9900;
 }
 
 .testarea .content {

@@ -30,42 +30,27 @@
 <body>
 
     <div class="wrapper">
-        <!-------------------輪播圖-------------------->
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/index_carousel1.jpg" alt="Image 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/index_carousel2.jpg" alt="Image 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/index_carousel3.jpg" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/index_carousel4.jpg" alt="Image 4">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/index_carousel5.jpg" alt="Image 5">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/index_carousel6.jpg" alt="Image 6">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/index_carousel7.jpg" alt="Image 7">
-                </div>
+
+        <!-------------------首圖swiper---------------->
+        <div class="swiper mySwiper swiper1">
+            <div class="swiper-wrapper">
+              <picture class="swiper-slide">
+                <source srcset="./img/index_swiper1-1.jpg" media="(max-width: 768px)">
+                <img src="./img/index_carousel1.jpg" alt="">
+            </picture>
+              <div class="swiper-slide"><img src="./img/index_carousel2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/index_carousel3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/index_carousel4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/index_carousel5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/index_carousel6.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/index_carousel7.jpg" alt=""></div>
             </div>
-            <!-- 按鈕 -->
-            <div class="carousel-buttons">
-                <span class="button active" data-slide="0">01</span>
-                <span class="button" data-slide="1">02</span>
-                <span class="button" data-slide="2">03</span>
-                <span class="button" data-slide="3">04</span>
-                <span class="button" data-slide="4">05</span>
-                <span class="button" data-slide="5">06</span>
-                <span class="button" data-slide="6">07</span>
-            </div>
-        </div>
+            <div class="swiper-pagination swiper-pagination1"></div>
+          </div>
+        
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          
 
 
         <!----------------- 主選單 --------------------->
@@ -115,15 +100,15 @@
                 <div class="text">
                     <img class="logo" src="./img/logo_withchinese.png" alt="">
                     <h2>品牌理念</h2>
-                    <p>青色是最接近天空的顏色，當你仰望天空的時候，總是會想起一些特別的回憶；<br><br>而我們用相機，在每一次的閃光快門之下，就是一張<br>珍貴的瞬間，將這些寶貴片刻編輯成冊，<br>讓你可以隨時回味翻閱。
+                    <p>青色是最接近天空的顏色，當你仰望天空的時候，<br>總是會想起一些特別的回憶；<br><br>而我們用相機，在每一次的閃光快門之下，就是一張<br>珍貴的瞬間，將這些寶貴片刻編輯成冊，<br>讓你可以隨時回味翻閱。
                     </p>
                     <a class="more-bar" href="about.html">more<i class="fa-solid fa-arrow-right-long"></i></i></a>
                 </div>
             </div>
             <!-- ----------------swiper--------------- -->
-            <div #swiperRef="" class="swiper mySwiper">
+            <div #swiperRef="" class="swiper mySwiper swiper2">
                 <h1>Framing Your Story <br> with Light</h1>
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper s2">
                     <div class="swiper-slide"><img src="./img/index_swiper1.jpg" alt=""> </div>
                     <div class="swiper-slide"> <img src="./img/index_swiper2.jpg" alt=""> </div>
 
@@ -155,8 +140,8 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
 
-                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-                <script src="./js/script.js"></script>
+                <div class="swiper-pagination swiper-pagination2"></div>
+
             </div>
 
             <!-----------------connect------------------->
@@ -187,16 +172,17 @@
                     <img class="logo" src="./img/logo_text.png" alt="">
                     <p>不管是在稀鬆不過的平常，或是人生中重要的日子，都能讓我們記錄下來，完整保存進你的回憶天空裡。</p>
                     <img class="flower" src="./img/index_contact_pic.jpg" alt="">
+                    <div class="contact-button">
+                        <a href="contect.html" class="form-link">
+                            <span>預約表單</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span>聯絡我們</span>
+                            <img src="./img/icon_line.png" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="contact-button">
-                    <a href="contect.html" class="form-link">
-                        <span>預約表單</span>
-                    </a>
-                    <a href="#" class="contact-link">
-                        <span>聯絡我們</span>
-                        <img src="./img/icon_line.png" alt="">
-                    </a>
-                </div>
+               
             </section>
         </div>
 
@@ -255,6 +241,8 @@
         </small>
 
     </div>
+    <script src="./js/script.js"></script>
+
 </body>
 
 </html>
