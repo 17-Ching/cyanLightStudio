@@ -19,20 +19,37 @@
     <!------------swiper---------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!--------------script-------------->
+    <script src="./js/jQuery/jquery-3.7.1.js"></script>
+
 </head>
 <div class="wrapper">
 
     <!----------------- 主選單 --------------------->
     <nav>
-        <ul>
-            <li><a class="but1" href="index.html">首頁</a></li>
-            <li><a href="about.html">關於我們</a></li>
-            <li><a href="service.html">攝影項目</a></li>
-            <li><a href="index.html"><img src="./img/logo_white.png" alt=""></a></li>
-            <li><a href="program.html">流程預約</a></li>
-            <li><a href="feedback.html">顧客回饋</a></li>
-            <li><a href="contect.html">預約表單</a></li>
-        </ul>
+        <div class="menu transition">
+            <div class="hamwrap">
+
+                <a href="index.html"><img class="nav_logo2" src="./img/logo_white.png" alt=""></a>
+                <div class="nav_bar">
+                    <div class="bar bar1 transition2"></div>
+                    <div class="bar bar2 transition2"></div>
+                    <div class="bar bar3 transition2"></div>
+                </div>
+                
+            </div>
+            <ul class="transition">
+                <li><a class="nav_but" href="index.html">首頁</a></li>
+                <li><a class="nav_but" href="about.html">關於我們</a></li>
+                <li><a class="nav_but" href="service.html">攝影項目</a></li>
+                <li><a class="nav_but" href="index.html"><img class="logo1" src="./img/logo_white.png" alt=""></a></li>
+                <li><a class="nav_but" href="program.html">流程預約</a></li>
+                <li><a class="nav_but" href="feedback.html">顧客回饋</a></li>
+                <li><a class="nav_but" href="contect.html">預約表單</a></li>
+            </ul>
+        </div>
+        <script src="./js/nav.js"></script>
+
     </nav>
 
     <!----------------header-------------------->
@@ -47,7 +64,10 @@
     <div class="container">
         <div class="content">
             <main>
-                <img class="dog" src="./img/pet_pic1.jpg" alt="">
+                <picture>
+                    <source class="dog" srcset="./img/pet_pic1_1.jpg" media="(max-width: 768px)">
+                    <img class="dog" src="./img/pet_pic1.jpg" alt="">
+                  </picture>
                 <section>
                     <div class="text">
                         <h2>與寶貝毛小孩最棒的回憶紀錄</h2>
@@ -69,10 +89,12 @@
                     </div>
                 </section>
             </main>
-
+        </div>
             <div class="videowrap">
                 <main>
-                    <iframe width="789" height="444" src="https://www.youtube.com/embed/V7FvpIJp6QI" title="貓咪VLOG｜喵少爺Woosa的一天" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-container">
+                        <iframe  src="https://www.youtube.com/embed/V7FvpIJp6QI" title="貓咪VLOG｜喵少爺Woosa的一天" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                     <img src="./img/logo_white.png" alt="">
                     <p>最動人心弦的回憶，僅在片刻傾注</p>
                 </main>

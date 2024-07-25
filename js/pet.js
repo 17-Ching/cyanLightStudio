@@ -28,13 +28,44 @@ var mySwiper = new Swiper('.swiper', {
     // stopOnLastSlide: false,
     // disableOnInteraction: true,
     },
+    centeredSlides: true,
+    speed:500,
+      freeMode:true,
+
     slidesPerView: "auto",
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
       autoHeight: true,
-      loop:true,
-      autoplay:true,
     },
+    loop:true,
+
+    breakpoints: {
+      // 1200: {
+      //     slidesPerView: 3,
+      //     spaceBetween: 30,
+      //   },
+      // 992: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 10,
+          
+      //   },
+      // 768: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 10,
+          
+      //   },
+      // 431: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 10,
+          
+      //   },
+      // 0: {
+      //     slidesPerView: 1,
+      //     // slidesPerGroup: 1,
+      //     spaceBetween: 10,
+          
+      //   },
+  }
 });

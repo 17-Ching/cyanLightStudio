@@ -17,3 +17,26 @@
         playbutton.style.visibility = 'visible';
     }
 });
+
+
+
+// -----------------RWD--------------------//
+
+const video2 = document.querySelector(".video1");
+const playbutton2 = document.querySelector('.play-button2');
+
+playbutton2.addEventListener("click", () => {
+    if (video2.paused) { 
+       //  console.log('video paused');
+        video2.play();
+        playbutton2.style.visibility = 'hidden';
+    } 
+});
+
+video2.addEventListener("click", () => {
+   if (!video2.paused) { 
+       // console.log('video playing');
+       video2.pause();
+       playbutton2.style.visibility = 'visible';
+   }
+});

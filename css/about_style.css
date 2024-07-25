@@ -14,7 +14,8 @@ header {
 
 .title{
     /* border: 2px solid red; */
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 360px;
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@ header {
     border-top: 4px solid #FF9800;
     border-right: 4px solid #FF9800;
     border-left: 4px solid #FF9800;
-    
+    margin: 0 50px;
 }
 
 .title h1{
@@ -31,7 +32,7 @@ header {
     color: #FFF;
     text-align: center;
     text-shadow: 0px 4px 5.5px rgba(0, 0, 0, 0.72);
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 165%; 
     letter-spacing: 15px;
@@ -43,7 +44,7 @@ header {
     color: #FFF;
     text-align: center;
     text-shadow: 0px 4px 5.5px rgba(0, 0, 0, 0.72);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 140%; 
     letter-spacing: 8px;
@@ -82,7 +83,7 @@ header {
 
 .content main{
     /* border: 2px solid green;  */
-    width: 800px;
+    max-width: 800px;
     /* border-right: 4px solid #008C91;
     border-bottom: 4px solid #008C91;
     border-left: 4px solid #008C91; */
@@ -95,10 +96,10 @@ header {
 .content p{
     color: var(--font-dark, #333);
     text-align: center;
-    font-size: 16x;
+    font-size: 16px;
     font-weight: 500;
     line-height: 200%; 
-    margin: 50px 150px 50px
+    margin: 50px 0 50px
 }
 
 .content .icon{
@@ -111,8 +112,11 @@ header {
 .about_main{
     margin: 0 auto;
     display: block;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin-bottom: 100px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /* ------------攝影師介紹-------------- */
@@ -139,28 +143,28 @@ header {
 }
 .card1 h1{
     color:#001F28;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 165%; 
     letter-spacing: 15.36px;
     opacity: 0.4;
     position: absolute;
-    right:150px;
+    left: 30%;
     top: 0;
-    z-index: 10;
+    z-index: 9;
 }
 
 .card1 picture{    
     /* border: 2px solid yellow;  */
     position: relative;
-    margin-left: 220px;
+    margin-left: 10%;
 }
 
 .card1 .pic1{
     width: 240px;
     border-radius: 120px;
     position: absolute;
-    right: -110px;
+    right: -30%;
     top: 110px;
 }
 
@@ -170,12 +174,15 @@ header {
 
 .card1 .text{
     /* border: 2px solid blue; */
-    margin: 110px 200px 100px 130px;
+    max-width: 310px;
+    margin-left: 13%;
+    margin-right: 5%;
+    margin-top: 10%;
 }
 
 .card1 h2{
     color: #FAFAFA;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
     line-height: 165%;
     letter-spacing: 2.56px;
@@ -190,6 +197,13 @@ header {
 }
 
 /* -p2- */
+.video1{
+    display: none;
+}
+
+.play-button2{
+    display: none;
+}
 
 .person2{
     padding:50px 0;
@@ -201,25 +215,26 @@ header {
 .person2 .card2{
     /* border: 2px solid green;  */
     display: flex;
+    justify-content: end;
     position: relative;
 }
 .card2 h1{
     color:#001F28;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 165%; 
     letter-spacing: 15.36px;
     opacity: 0.4;
     position: absolute;
-    left:180px;
+    right: 30%;
     top: 0;
-    z-index: 10;
+    z-index: 9;
 }
 
 .card2 picture{    
     /* border: 2px solid yellow;  */
     position: relative;
-    margin-right: 220px;
+    margin-right: 10%;
     order: 2;
 }
 
@@ -229,7 +244,7 @@ header {
     position: absolute;
     left: -110px;
     top: 110px;
-    z-index: 10;
+    z-index: 9;
 }
 
 .card2 .video2{
@@ -238,7 +253,7 @@ header {
 
 .play-button1 {
     border: none;
-    z-index: 9;
+    z-index: 8;
     position: absolute;
     background-color: #ffffff00;
     top: 50%;
@@ -252,13 +267,16 @@ header {
 
 .card2 .text{
     /* border: 2px solid blue; */
-    margin: 110px 130px 100px 210px;
+    max-width: 310px;
+    margin-right: 13%;
+    margin-left: 5%;
+    margin-top: 10%;
     order:1;
 }
 
 .card2 h2{
     color: #FAFAFA;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
     line-height: 165%;
     letter-spacing: 2.56px;
@@ -301,7 +319,7 @@ header {
 }
 
 .more span{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -310,4 +328,229 @@ header {
     align-self: end;
     width: 100px;
     margin-right: 15px;
+}
+
+/* ----------RWD------------- */
+
+@media screen and (max-width:992px) {
+    .card1 h1 {
+        left: 17%;
+        top: -5%;
+    }
+
+    .card2 h1{
+        right: 14%;
+        top: -3%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .person1{
+        padding-bottom: 100px;
+    }
+
+    .intro{
+        padding-top: 0;
+    }
+
+    /* -----------------persone1------------- */
+
+    .person1 .card1{
+        flex-direction: column;
+    }
+
+    .card1 picture{
+        background-image: url(../img/about_pic2-1.jpg);
+        width: 100%;
+        /* max-width: 560px; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: auto; */
+        margin: 0 auto;
+        /* height: 330px; */
+        background-position: -10px -160px;
+    }
+
+    .card1 .bg1{
+        display: none;
+    }
+
+    .card1 .pic1{
+        position: unset;
+        width: 100%;
+        max-width: 320px;
+        border-radius: 200px;
+        display: block;
+        margin: 90px auto 0;
+    }
+
+    .card1 h1{
+        color: #FAFAFA;
+        left: 3%;
+        top: 0%;
+        opacity: 0.7;
+        letter-spacing: 8px;
+    }
+
+    .card1 .text{
+        margin: 0 auto;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .card1 h2{
+        font-size: 4rem;
+    }
+
+    .card1 p{
+        text-align: center;
+
+    }
+
+    /* -----------------persone2------------- */
+
+    .pic2{
+        display: none;
+    }
+
+    .person2 .card2{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .person2{
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .video2{
+        display: none;
+    }
+
+    .play-button1{
+        display: none;
+    }
+
+    .play-button2{
+        display: block;
+    }
+
+    .video1{
+        display: block;
+        width:100%;
+        position: relative;
+    }
+
+    .card2 picture{
+        margin-right: unset;
+        width: 100%;
+        height: 700px;
+    }
+
+    
+    .play-button2 {
+        border: none;
+        z-index: 8;
+        position: absolute;
+        background-color: #ffffff00;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FF9800;
+        cursor: pointer;
+        font-size: 100px;
+    }
+
+    .card2 .pic2{
+        width: 100%;
+        max-width: 320px;
+        border-radius: 200px;
+        left: 28%;
+        top: 60%;
+        right: 10%;
+    }
+
+    .card2 .text{
+        margin: 0 auto 10%;
+        max-width: 340px;
+        text-align: center;
+    }
+
+    .card2 h2 {
+        font-size: 4rem;
+    }
+
+    .card2 h1 {
+        color: #FAFAFA;
+        right:  3%;
+        top: 0%;
+        opacity: 0.7;
+        letter-spacing: 8px;
+    }
+
+    .card2 p{
+        text-align: center;
+    }
+
+    .videowrap2{
+        position: relative;
+        /* margin-bottom: 300px; */
+    }
+
+    .videowrap2::before{
+        /* border: 2px solid red; */
+        content: '';
+        background-image: url(../img/about_pic3.jpg);
+        height: 426px;
+        width: 100%;
+        max-width: 320px;
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, 0);
+        border-radius: 200px;
+        z-index: 9;
+        
+    }
+
+    
+}
+
+@media screen and (max-width:474px) {
+    .card1 h1, .card2 h1{
+        font-size: 3rem;
+    }
+    .card1 .pic1, .videowrap2::before{
+        max-width: 280px;
+    }
+
+    .videowrap2::before{
+        height: 373px;
+    }
+
+    .card2 picture{
+        height: 553px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .card1 h1, .card2 h1{
+        font-size: 2rem;
+    }
+    .card1 .pic1, .videowrap2::before{
+        max-width: 220px;
+    }
+
+    .videowrap2::before{
+        height: 313px;
+        background-size: cover;
+    }
+
+    .card2 picture{
+        height: 443px;
+    }
+
+    .play-button2{
+        font-size: 70px;
+    }
 }

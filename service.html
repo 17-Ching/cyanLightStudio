@@ -17,6 +17,9 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--------------script-------------->
+    <script src="./js/jQuery/jquery-3.7.1.js"></script>
+
 </head>
 
 <body>
@@ -24,15 +27,29 @@
 
         <!----------------- 主選單 --------------------->
         <nav>
-            <ul>
-                <li><a class="but1" href="index.html">首頁</a></li>
-                <li><a href="about.html">關於我們</a></li>
-                <li><a href="service.html">攝影項目</a></li>
-                <li><a href="index.html"><img src="./img/logo_white.png" alt=""></a></li>
-                <li><a href="program.html">流程預約</a></li>
-                <li><a href="feedback.html">顧客回饋</a></li>
-                <li><a href="contect.html">預約表單</a></li>
-            </ul>
+            <div class="menu transition">
+                <div class="hamwrap">
+
+                    <a href="index.html"><img class="nav_logo2" src="./img/logo_white.png" alt=""></a>
+                    <div class="nav_bar">
+                        <div class="bar bar1 transition2"></div>
+                        <div class="bar bar2 transition2"></div>
+                        <div class="bar bar3 transition2"></div>
+                    </div>
+                    
+                </div>
+                <ul class="transition">
+                    <li><a class="nav_but" href="index.html">首頁</a></li>
+                    <li><a class="nav_but" href="about.html">關於我們</a></li>
+                    <li><a class="nav_but" href="service.html">攝影項目</a></li>
+                    <li><a class="nav_but" href="index.html"><img class="logo1" src="./img/logo_white.png" alt=""></a></li>
+                    <li><a class="nav_but" href="program.html">流程預約</a></li>
+                    <li><a class="nav_but" href="feedback.html">顧客回饋</a></li>
+                    <li><a class="nav_but" href="contect.html">預約表單</a></li>
+                </ul>
+            </div>
+            <script src="./js/nav.js"></script>
+
         </nav>
 
         <!----------------header-------------------->
@@ -57,7 +74,7 @@
         <div class="container">
             <div class="content">
                 <main>
-                    <div class="card1">
+                    <div class="card card1">
                         <div class="text">
                             <h2>婚紗攝影</h2>
                             <p> 捕捉愛情瞬間，<br>定格最美回憶。</p>
@@ -69,7 +86,7 @@
                         <a href="service_pet.html"></a>
                     </div>
 
-                    <div class="card2">
+                    <div class="card card2">
                         <div class="text">
                             <h2>求婚紀錄</h2>
                             <p> 記錄求婚驚喜，<br>
@@ -82,7 +99,7 @@
                         <a href="service_pet.html"></a>
                     </div>
 
-                    <div class="card3">
+                    <div class="card card3">
                         <div class="text">
                             <h2>個人寫真</h2>
                             <p> 經典風格，<br>
@@ -95,7 +112,7 @@
                         <a href="service_pet.html"></a>
                     </div>
 
-                    <div class="card4">
+                    <div class="card card4">
                         <div class="text">
                             <h2>旅遊紀錄</h2>
                             <p> 用鏡頭拍下<br>
@@ -108,7 +125,7 @@
                         <a href="service_pet.html"></a>
                     </div>
 
-                    <div class="card5">
+                    <div class="card card5">
                         <div class="text">
                             <h2>寵物寫真</h2>
                             <p> 捕紀錄寶貝毛小孩們<br>
@@ -121,7 +138,7 @@
                         <a href="service_pet.html"></a>
                     </div>
 
-                    <div class="card6">
+                    <div class="card card6">
                         <div class="text">
                             <h2>食物攝影</h2>
                             <p> 用鏡頭記錄食物的美味<br>與獨特風味。</p>

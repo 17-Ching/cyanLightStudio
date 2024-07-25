@@ -10,13 +10,15 @@ header {
     justify-content: center;
     /* border: 2px solid blue; */
     flex-direction: column; 
+    background-position: center;
 }
 
 header ul{
     /* border: 2px solid red;  */
+    
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 header li{
@@ -34,7 +36,7 @@ header li::after{
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 10;
+    z-index: 9;
 }
 
 header li:first-child::after {
@@ -46,7 +48,7 @@ header .title{   /*----a-----*/
 
     text-decoration: none;
     color: #FAFAFA;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 400%; 
     letter-spacing: 1.92px;
@@ -131,40 +133,41 @@ header .title:hover{
 .flow > h1{
     /* border: 2px solid yellow;  */
     color: #FFF9E6;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     letter-spacing: 2.56px;
-    margin-left: 120px;
+    margin-left: 6%;
     /* margin-top: 100px; */
     line-height: -10%;
 }
 
 .flow .wrap{
-    display: flex;
-    padding: 80px 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 6% 0;
     background: #008C91;
 }
 
 .flow ul{
     /* border: 2px solid yellow;  */
     display: flex;
-    width: 1060px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 1%;
+    margin: 0 10px;
+    
 }
 
 .flow li{
     /* border: 2px solid purple;  */
-    width: 240px;
+    max-width: 240px;
     height: 480px;
     background: #fafafacc;
     display: flex;
     flex-direction: column;
     /* margin-right: 20px;    */
     transition: .5s;
+    flex-grow: 1;
+    flex-basis: auto;
 }
 
 .flow li:hover{
@@ -184,18 +187,22 @@ header .title:hover{
 .step h2{
     color:#ff9900d2;
     text-align: right;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 140%;
     margin-right: 10px;
+}
+
+.titlewrap{
+    display: flex;
+    align-items: center;
+    
 }
 
 .step .title{
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    align-self: stretch;
     flex-wrap: wrap;
     margin-top: 40px;
 }
@@ -204,7 +211,7 @@ header .title:hover{
     margin-top: 40px;
     display: block;
     color: #FF9800;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -223,7 +230,7 @@ header .title:hover{
 
 .step h1{
     color:#975F2F;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 140%; 
     letter-spacing: 5.12px;
@@ -251,11 +258,11 @@ header .title:hover{
 
 .intro h1{
     color: #FFF9E6;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     letter-spacing: 2.56px;
     text-align: right;
-    margin-right: 120px;
+    margin-right: 6%;
     margin-top: 100px;
     line-height: -10%;
 }
@@ -284,12 +291,12 @@ header .title:hover{
     display: flex;
     /* align-items: center; */
     position: absolute;
-    left: 170px;
+    right:48% ;
     top: -40px;
 }
 
 .intro img{
-    width: 300px;
+    max-width: 300px;
     border-radius: 160px;
 }
 
@@ -332,7 +339,7 @@ header .title:hover{
     flex-direction: row;
     /* align-items: center; */
     position: absolute;
-    right: 160px;
+    left: 48%;
     bottom: -90px;
 }
 
@@ -350,7 +357,7 @@ header .title:hover{
 }
 
 .intro  .video2{
-    width: 300px;
+    max-width: 300px;
     border-radius: 160px;
     position: relative;
 }
@@ -365,7 +372,7 @@ header .title:hover{
     transform: translate(-50%, -50%);
     color: #FF9800;
     cursor: pointer;
-    font-size: 100px;
+    font-size: 6rem;
 }
 
 /* -------------注意事項------------ */
@@ -378,10 +385,10 @@ header .title:hover{
 
 .notice h1{
     color: #FFF9E6;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     letter-spacing: 2.56px;
-    margin-left: 120px;
+    margin-left: 6%;
     line-height: -10%;
 }
 .notice .text{
@@ -396,7 +403,7 @@ header .title:hover{
 .notice .textwrap{
     /* border: 2px solid purple; */
     border: thick double #FF9800;
-    width: 90%;
+    
     height: 90%;
     margin: 0 auto;
     padding: 60px 60px 40px ;
@@ -407,8 +414,7 @@ header .title:hover{
 section{
     /* border: 2px solid yellow; */
     
-    width: 90%;
-    margin: 0 auto;
+    
     padding-bottom: 40px;
 }
 
@@ -434,3 +440,261 @@ section{
     background-color: #008C91;
 }
 
+/* -------RWD---------- */
+
+@media screen and (max-width:1011px) {
+
+    header .title{
+        padding: 0 30px;
+        font-size: 2.8rem;
+    }
+
+    .flow ul{
+        gap: 4%;
+    }
+
+    .flow li{
+        max-width: 320px;
+        margin-bottom: 4%;
+    }
+
+    .flow .step{
+        height: 94%;
+    }
+
+    .bgc{
+        height: 830px;
+    }
+
+    .bgc::after{
+        transform: rotate(45deg);
+        left: 44%;
+        bottom: 47%;
+        z-index: 0;
+
+    }
+
+    .intro .pic1{
+        right: 32%;
+        z-index: 1;
+    }
+
+    .intro .pic2{
+        left: 32%;
+        bottom: -120px;
+        z-index: 1;
+
+    }
+
+    .notice .textwrap{
+        padding: 60px 30px 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header{
+        background-image: url(../img/index_carousel6.jpg);
+        /* flex-direction: row; */
+        align-items: start;
+    }
+
+    header ul{
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-left: 15%;
+    }
+
+    header li::after{
+        display: none;
+    }
+
+    header li:nth-child(2){
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+    .contact-button1{
+        margin-left: 5%;
+    }
+
+    .step .title{
+        flex-wrap: nowrap;
+        margin-top: 0;
+        justify-content: space-around;
+    }
+
+    .flow ul{
+        margin: 0 20px;
+    }
+
+    .flow li{
+        height: 300px;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .step h1{
+        font-size: 2rem;
+    }
+
+    .step h2{
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .step p{
+        margin-top: 10px;
+    }
+
+    .flow .step{
+        height: 88%;
+        width: 94%;
+    }
+
+    .step i{
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+
+    /* ---------------- */
+
+    .bgc {
+        height: 820px;
+    }
+
+    .bgc::after{
+        transform: rotate(323deg);
+        left: 44%;
+        bottom: 47%;
+    }
+
+    .intro .pic1{
+        right: 20%;
+        bottom: 50%;
+        top: unset;
+        align-items: center;
+        
+    }
+
+    .intro .text1{
+        margin-top: unset;
+        margin-left: 20px;
+    }
+
+    .intro .pic2{
+        left: 20%;
+        bottom: unset;
+        top: 56%;
+        align-items: center;
+    }
+
+    .intro .text2{
+        margin-top: unset;
+        margin-right: 20px;
+    }
+
+    .intro img{
+        max-width: 260px;
+        object-fit: cover;
+        height: fit-content;
+    }
+
+    .intro .videowrap{
+        height: fit-content;
+    }
+    
+    .intro .video2{
+        max-width: 260px;
+        
+    }
+
+   
+
+    /* -------------- */
+
+    .notice .textwrap{
+        height: 340px; 
+        overflow-y: auto; 
+        padding: 30px 30px 0;
+        margin: unset;
+        box-sizing: unset;
+    }
+
+    .notice .text{
+        padding: 10% 5%;
+    }
+
+   
+    .textwrap::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    background-color: #fff9e6d0;
+    }
+
+    .textwrap::-webkit-scrollbar {
+    width: 8px;
+    background-color: black;
+    }
+
+    .textwrap::-webkit-scrollbar-thumb {
+    background-color: #FF9800;
+    }
+}
+
+@media screen and (max-width:543px) {
+
+    .bgc{
+        height: unset;
+        padding: 50px 10px;
+    }
+    .intro .pic1{
+        flex-direction: column;
+        position: unset;
+        margin: 0  auto 80px;
+
+    }
+
+    .intro .pic2{
+        position: unset;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin: 0  auto;
+    }
+
+    .intro img{
+        margin-bottom: 30px;
+    }
+
+    .intro .videowrap{
+        margin-bottom: 30px;
+
+    }
+
+    .bgc::after{
+        transform: rotate(170deg);
+        left: 28%;
+        bottom: 49%;
+        width: 50%;
+    }
+
+    .intro p{
+        text-align: center;
+    }
+
+    .intro .text1{
+        margin-left: unset;
+        text-align:center;
+    }
+
+    .intro .text2{
+        margin-right: unset;
+        text-align:center;
+    }
+
+    .contact-link{
+        width: 120px;
+    }
+
+    .form-link{
+        width: 120px;
+
+    }
+}

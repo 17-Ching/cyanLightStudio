@@ -3,7 +3,7 @@ header {
     background-image: url(.././img/feedback_bg.jpg);
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 600px;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ header {
 
 header h1 {
     /* border: 2px solid green;  */
-    padding: 20px 80px;
+    padding: 20px 10%;
     color: #FFF;
     font-size: 3rem;
     font-weight: 700;
@@ -206,7 +206,7 @@ header h1 {
     }
 
     .container{
-        padding: 5% 5%;
+        padding: 10% 5%;
     }
 
     .container li {
@@ -240,6 +240,11 @@ header h1 {
         /* padding: 5PX; */
     }
 
+    .container li:hover {
+        transform: unset;
+    
+    }
+
 }
 
 @media screen and (max-width : 758px) {
@@ -257,6 +262,8 @@ header h1 {
     .container .customer {
         margin: 15px auto;
     }
+
+   
 
 
 }
