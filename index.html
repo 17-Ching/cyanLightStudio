@@ -25,6 +25,9 @@
     <!------------jQuery--------------->
     <script src="./js/jQuery/jquery-3.7.1.js"></script>
 
+     <!----------------aos---------------->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -77,7 +80,7 @@
                     <li><a class="nav_but" href="contect.html">預約表單</a></li>
                 </ul>
             </div>
-            <script src="./js/nav.js"></script>
+            
 
         </nav>
        
@@ -86,7 +89,8 @@
             <!---------------- slogn+圖 ------------------------->
 
             <main>
-                <div class="middlepic">
+                <div class="middlepic" data-aos="fade-up"
+                data-aos-duration="1000">
                     <img class="pic1" src="./img/index_main2.jpg" alt="">
                     <h1 class="s1">Capturing<br> Moments,</h1>
                     <img class="pic2" src="./img/index_main1.jpg" alt="">
@@ -98,22 +102,24 @@
             <div class="content">
                 <img class="contentpic" src="./img/index_main-text1.jpg" alt="">
                 <div class="text">
+                    <div class="aos" data-aos="fade" data-aos-duration="1000">
                     <img class="logo" src="./img/logo_withchinese.png" alt="">
                     <h2>品牌理念</h2>
                     <p>青色是最接近天空的顏色，當你仰望天空的時候，<br>總是會想起一些特別的回憶；<br><br>而我們用相機，在每一次的閃光快門之下，就是一張<br>珍貴的瞬間，將這些寶貴片刻編輯成冊，<br>讓你可以隨時回味翻閱。
                     </p>
                     <a class="more-bar" href="about.html">more<i class="fa-solid fa-arrow-right-long"></i></i></a>
                 </div>
+                </div>
             </div>
             <!-- ----------------swiper--------------- -->
-            <div #swiperRef="" class="swiper mySwiper swiper2">
+            <div #swiperRef="" class="swiper mySwiper swiper2" data-aos="fade" data-aos-duration="1000">
                 <h1>Framing Your Story <br> with Light</h1>
                 <div class="swiper-wrapper s2">
                     <div class="swiper-slide"><img src="./img/index_swiper1.jpg" alt=""> </div>
                     <div class="swiper-slide"> <img src="./img/index_swiper2.jpg" alt=""> </div>
 
                     <div class="swiper-slide">
-                        <video class="video1" loop="ture">
+                        <video class="video1" loop="ture" poster="./img/index_swiper3_1.png">
                             <source src="./img/index_swiper3.mp4" type="video/mp4">
                         </video>
                         <button class="play-button1">
@@ -128,7 +134,7 @@
                     <div class="swiper-slide"> <img src="./img/index_swiper7.jpg" alt=""> </div>
                     <div class="swiper-slide"> <img src="./img/index_swiper8.jpg" alt=""> </div>
                     <div class="swiper-slide">
-                        <video class="video2" loop="ture">
+                        <video class="video2" loop="ture" poster="./img/index_swiper9-1.jpg">
                             <source src="./img/index_swiper9.mp4" type="video/mp4">
                         </video>
                         <button class="play-button2">
@@ -146,7 +152,7 @@
 
             <!-----------------connect------------------->
             <div class="connect">
-                <ul>
+                <ul data-aos="fade" data-aos-duration="1000">
                     <li><a href="about.html">認識攝影師</a></li>
                     <li><a href="service.html">攝影項目</a></li>
                     <li><a href="program.html">預約流程</a></li>
@@ -155,7 +161,7 @@
 
             <!-------------------service----------------->
             <div class="service">
-                <ul>
+                <ul data-aos="fade" data-aos-duration="1000">
                     <li class="item1"><a href="service_pet.html">求婚記錄 <img src="./img/icon_arrow .png" alt=""></a></li>
                     <li class="item2"><a href="service_pet.html">婚紗攝影<img src="./img/icon_arrow .png" alt=""></a></li>
                     <li class="item3"><a href="service_pet.html">個人寫真<img src="./img/icon_arrow .png" alt=""></a></li>
@@ -167,8 +173,9 @@
 
             <!------------------contact-------------------->
 
-            <section class="contact">
-                <div class="contact-wrap">
+            <section class="contact" data-aos="fade-up"
+            data-aos-duration="1000">
+                <div class="contact-wrap" >
                     <img class="logo" src="./img/logo_text.png" alt="">
                     <p>不管是在稀鬆不過的平常，或是人生中重要的日子，都能讓我們記錄下來，完整保存進你的回憶天空裡。</p>
                     <img class="flower" src="./img/index_contact_pic.jpg" alt="">
@@ -241,7 +248,15 @@
         </small>
 
     </div>
-    <script src="./js/script.js"></script>
+    
+
+        <!----------------aos---------------->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-----------------js----------------->
+        <script src="./js/nav.js"></script>
+        <script src="./js/scroll.js"></script>
+        <script src="./js/script.js"></script>
 
 </body>
 

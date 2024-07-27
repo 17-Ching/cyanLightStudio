@@ -20,6 +20,9 @@
     <!--------------script-------------->
     <script src="./js/jQuery/jquery-3.7.1.js"></script>
 
+    <!----------------aos---------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,13 +51,13 @@
                     <li><a class="nav_but" href="contect.html">預約表單</a></li>
                 </ul>
             </div>
-            <script src="./js/nav.js"></script>
+            
 
         </nav>
 
         <!----------------header-------------------->
         <header>
-            <item>
+            <item  data-aos="fade"  data-aos-duration="1000" data-aos-delay="100">
                 <h1>攝影項目</h1>
                 <p>專業攝影服務，<br>捕捉生活中每一個珍貴的美好瞬間，<br>創造永恆記憶。</p>
                 <div class="contact-button">
@@ -74,7 +77,8 @@
         <div class="container">
             <div class="content">
                 <main>
-                    <div class="card card1">
+                    <div class="aos" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500">
+                    <div class="card card1" >
                         <div class="text">
                             <h2>婚紗攝影</h2>
                             <p> 捕捉愛情瞬間，<br>定格最美回憶。</p>
@@ -85,8 +89,10 @@
                         </div>
                         <a href="service_pet.html"></a>
                     </div>
+                </div>
 
-                    <div class="card card2">
+                <div class="aos" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="card card2" >
                         <div class="text">
                             <h2>求婚紀錄</h2>
                             <p> 記錄求婚驚喜，<br>
@@ -98,8 +104,10 @@
                         </div>
                         <a href="service_pet.html"></a>
                     </div>
+                </div>
 
-                    <div class="card card3">
+                <div class="aos" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="card card3" >
                         <div class="text">
                             <h2>個人寫真</h2>
                             <p> 經典風格，<br>
@@ -111,7 +119,9 @@
                         </div>
                         <a href="service_pet.html"></a>
                     </div>
+                </div>
 
+                <div class="aos" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500">
                     <div class="card card4">
                         <div class="text">
                             <h2>旅遊紀錄</h2>
@@ -124,7 +134,9 @@
                         </div>
                         <a href="service_pet.html"></a>
                     </div>
+                </div>
 
+                <div class="aos" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-delay="200">
                     <div class="card card5">
                         <div class="text">
                             <h2>寵物寫真</h2>
@@ -137,7 +149,9 @@
                         </div>
                         <a href="service_pet.html"></a>
                     </div>
+                </div>
 
+                <div class="aos" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-delay="400">
                     <div class="card card6">
                         <div class="text">
                             <h2>食物攝影</h2>
@@ -150,7 +164,8 @@
                         <a href="service_pet.html"></a>
                     </div>
                     </a>
-            </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
@@ -212,6 +227,13 @@
     </small>
 
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-----------------js----------------->
+    <script src="./js/nav.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

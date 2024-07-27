@@ -20,6 +20,9 @@
     <!--------------script-------------->
     <script src="./js/jQuery/jquery-3.7.1.js"></script>
 
+    <!----------------aos---------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,13 +51,13 @@
                     <li><a class="nav_but" href="contect.html">預約表單</a></li>
                 </ul>
             </div>
-            <script src="./js/nav.js"></script>
+            
 
         </nav>
 
         <!----------------header-------------------->
         <header>
-            <div class="title">
+            <div class="title" data-aos="fade"  data-aos-duration="1000" data-aos-delay="100">
                 <h1>關於我們</h1>
                 <h2>ABOUT  US</h2>
             </div>
@@ -66,29 +69,36 @@
             <!-------------------品牌理念-------------------->
 
             <div class="content">
-                <main>
-                    <p>
-                    青色是最接近天空的顏色，<br>當你仰望天空的時候，<br>總是會想起一些特別的回憶；
-                    <br><br>
-                    而我們用相機，<br>在每一次的閃光快門之下，<br>
-                    就是一張珍貴的瞬間，<br>將這些寶貴片刻編輯成冊，<br>讓你可以隨時回味翻閱。<br>
-                    <br>
-                    可能會因為這些照片開心，<br>或是因為照片而哭泣，<br>但隨著時間的流逝，<br>都將成為珍貴的回憶，<br>
-                    我們希望人們可以記住這些時光，<br>
-                    就算是一點點也好。
-                    <br><br>
-                    不管是在稀鬆不過的平常，<br>
-                    或是人生中重要的日子，<br>都能讓我們記錄下來，<br>完整保存進你的回憶天空裡。
-                   </p>
-                   <img class="icon" src="./img/logo_orign.png" alt="">
+                <main >
+                    <div class="aos" data-aos="fade-up"data-aos-duration="1000">
+                         青色是最接近天空的顏色，<br>當你仰望天空的時候，<br>總是會想起一些特別的回憶；
+                    </div>
+                    <div class="aos" data-aos="fade-up"data-aos-duration="1000">
+                        而我們用相機，<br>在每一次的閃光快門之下，<br>
+                        就是一張珍貴的瞬間，<br>將這些寶貴片刻編輯成冊，<br>讓你可以隨時回味翻閱。
+                    </div>
+                    <div class="aos" data-aos="fade-up"data-aos-duration="1000">
+                        可能會因為這些照片開心，<br>或是因為照片而哭泣，<br>但隨著時間的流逝，<br>都將成為珍貴的回憶，<br>
+                        我們希望人們可以記住這些時光，<br>
+                        就算是一點點也好。
+                    </div>
+                    <div class="aos" data-aos="fade-up"data-aos-duration="1000">
+                        不管是在稀鬆不過的平常，<br>
+                        或是人生中重要的日子，<br>都能讓我們記錄下來，<br>完整保存進你的回憶天空裡。
+                    </div>
+                   <img data-aos="fade"
+                   data-aos-anchor-placement="top-center" data-aos-duration="1500" class="icon" src="./img/logo_orign.png" alt="">
                 </main>
-                <img class="about_main" src="./img/about_main.jpg" alt="">
+                <div data-aos="fade"
+                data-aos-anchor-placement="top-center" data-aos-duration="1500" class="imgwrap">
+                <img  class="about_main" src="./img/about_main.jpg" alt="">
+                </div>
             </div>
 
             <!-------------------介紹攝影師--------------------->
             <div class="intro">
-                <div class="person1">
-                    <div class="card1">
+                <div class="person1" >
+                    <div class="card1" data-aos="fade-up"data-aos-duration="1000">
                         <h1>Photographer</h1>
                         <picture>
                             <img class="bg1" src="./img/about_pic2.jpg" alt="">
@@ -107,13 +117,13 @@
                     </div>
                 </div>
 
-                <div class="person2">
-                    <div class="card2">
+                <div class="person2" >
+                    <div class="card2" data-aos="fade-up"data-aos-duration="1000">
                         <h1>Videographer</h1>
                         <picture>
                             <img class="pic2" src="./img/about_pic3.jpg" alt="">
                         <videowrap class="videowrap1" src="">
-                            <video class="video2" loop="ture">
+                            <video class="video2" loop="ture" >
                                 <source src="./img/about_video.mp4" type="video/mp4">
                             </video>
                             <button class="play-button1">
@@ -122,7 +132,7 @@
                         </video>
 
                         <div class="videowrap2">
-                            <video class="video1" loop="ture">
+                            <video class="video1" loop="ture" poster="./img/about_video_1_1.png">
                                 <source src="./img/about_video_1.mp4" type="video/mp4">
                             </video>
                             <button class="play-button2">
@@ -208,6 +218,13 @@
         </small>
 
     </div>
+
+       <!----------------aos---------------->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+       <!-----------------js----------------->
+       <script src="./js/nav.js"></script>
+       <script src="./js/scroll.js"></script>
 
 </body>
 

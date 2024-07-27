@@ -20,6 +20,9 @@
     <!--------------script-------------->
     <script src="./js/jQuery/jquery-3.7.1.js"></script>
 
+      <!----------------aos---------------->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -48,19 +51,19 @@
                     <li><a class="nav_but" href="contect.html">預約表單</a></li>
                 </ul>
             </div>
-            <script src="./js/nav.js"></script>
+            
 
         </nav>
     
         <!----------------header-------------------->
         <header>
-                <ul>
+                <ul data-aos="fade"  data-aos-duration="1000" data-aos-delay="100">
                     <li> <a class="title" href="#aaa">預約流程</a></li>
                     <li><a class="title" href="#bbb">方案介紹</a></li>
                     <li><a class="title" href="#ccc">注意事項</a></li>
                 </ul>
 
-                <div class="contact-button contact-button1">
+                <div class="contact-button contact-button1" data-aos="fade" data-aos-duration="1000" data-aos-delay="100" >
                     <a href="contect.html" class="form-link">
                         <span>預約表單</span>
                     </a>
@@ -80,11 +83,11 @@
 
             <!-----------預約流程----------->
 
-            <div class="flow" id="aaa">
+            <div class="flow" id="aaa" >
                 <h1>預約流程</h1>
-                <div class="wrap">
+                <div class="wrap" >
 
-                 <ul>
+                 <ul data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500">
                     <li>
                         <div class="step">
                             <h2>01</h2>
@@ -153,8 +156,11 @@
                  <div class="intro" id="bbb">
                     <h1>方案介紹</h1>
                     <div class="bgc">
-                    <div class="pic1">
-                        <img src="./img/program_pic1.jpg" alt="">
+                    <div class="pic1" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="imgwrap">
+                            <img src="./img/program_pic1.jpg" alt="">
+
+                        </div>
                         <div class="text1">
                             <h3>平面攝影</h3>
                             <h4>NT.15,000起 </h4>
@@ -167,9 +173,9 @@
                         
                     </div>
 
-                    <div class="pic2">
+                    <div class="pic2" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500">
                         <div class="videowrap">
-                            <video class="video2" loop="ture">
+                            <video class="video2" loop="ture" poster="./img/program_video_1.png">
                                 <source src="./img/program_video.m4v" type="video/mp4">
                             </video>
                             <button class="play-button1">
@@ -198,7 +204,7 @@
                 <div class="notice" id="ccc">
                     <h1>注意事項</h1>
                     <div class="text">
-                        <div class="textwrap">
+                        <div class="textwrap" data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500">
                             <section>
                                 <h5>1. 預約與準備</h5>
                                 <p>
@@ -310,6 +316,11 @@
         </p>
     </small>
         </div>
-    
+     <!----------------aos---------------->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <!-----------------js----------------->
+     <script src="./js/nav.js"></script>
+     <script src="./js/scroll.js"></script>
 </body>
 </html>

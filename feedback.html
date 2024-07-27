@@ -20,6 +20,10 @@
     <!--------------script---------------->
     <script src="./js/jQuery/jquery-3.7.1.js"></script>
 
+    <!----------------aos---------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
 </head>
 <body>
 
@@ -48,22 +52,22 @@
                     <li><a class="nav_but" href="contect.html">預約表單</a></li>
                 </ul>
             </div>
-            <script src="./js/nav.js"></script>
 
         </nav>
     
         <!----------------header-------------------->
-        <header>
-          <h1>顧客回饋</h1>
+        <header >
+          <h1 data-aos="fade" data-aos-duration="1000" data-aos-delay="100">顧客回饋</h1>
     
         </header>
     
         <!---------------content-------------------------->
     
-        <div class="container">
-            <ul>
+        <div class="container" >
+            <ul >
                 <!-------------card1------------->
-                <li>
+                <div class="aos" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">
+                <li  >
                     <img class="customer" src="./img/feedback_pic1.jpg" alt="">
                     <div class="testarea">
                         <div class="tag">
@@ -80,9 +84,11 @@
                             </div>
                     </div>
                 </li>
+
+            </div>
                 
                 <!-------------card2------------->
-
+            <div class="aos" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">
                 <li>
                     <img class="customer" src="./img/feedback_pic2.jpg" alt="">
                     <div class="testarea">
@@ -99,10 +105,10 @@
                         </div>
                     </div>
                 </li>
-
+            </div>
                 <!-------------card3------------->
 
-            
+            <div class="aos" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">
                     <li>
                         <img class="customer" src="./img/feedback_pic3.jpg" alt="">
                         <div class="testarea">
@@ -120,10 +126,10 @@
                         </div>
                     </li>
     
-               
+                </div>
             </ul>
 
-            <a class="viewmore" href="#">View More</a>
+            <a data-aos="fade" data-aos-duration="1000" data-aos-delay="100" class="viewmore" href="#">View More</a>
     </div>
     
 
@@ -183,6 +189,14 @@
 </small>
 </div>
         
-    
+    <!----------------aos---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-----------------js----------------->
+    <script src="./js/nav.js"></script>
+    <script src="./js/scroll.js"></script>
+
+
+
 </body>
 </html>

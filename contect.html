@@ -20,6 +20,9 @@
     <!--------------script---------------->
     <script src="./js/jQuery/jquery-3.7.1.js"></script>
 
+    <!----------------aos---------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -48,18 +51,18 @@
                     <li><a class="nav_but" href="contect.html">預約表單</a></li>
                 </ul>
             </div>
-            <script src="./js/nav.js"></script>
+            
 
         </nav>
     
         <!----------------header-------------------->
-        <header>
+        <header data-aos="fade" data-aos-duration="1000" data-aos-delay="100">
           <h1>預約表單</h1>
           <h2>contact</h2>
         </header>
         <!---------------content------------------>
         
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-anchor-placement="top-center">
         <div class="text">
             <p class="p1">填寫線上表單，我們會盡快與您聯繫!</p>
             <wrap>
@@ -228,7 +231,12 @@
     
     </div>
 
+<!----------------aos---------------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<!-----------------js----------------->
+<script src="./js/nav.js"></script>
+<script src="./js/scroll.js"></script>
     
 </body>
 </html>

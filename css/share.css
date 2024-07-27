@@ -50,6 +50,7 @@ nav li {
     /* border: 2px solid green; */
     flex-grow: 1;
     position: relative;
+    
 }
 
 ul .logo1 {
@@ -70,6 +71,8 @@ nav .nav_but {
     display: block;
     letter-spacing: 4px;
     transition: .5s;
+   
+
 }
 
 nav li::before {
@@ -92,15 +95,17 @@ nav li:nth-child(4)::before {
 nav li:hover::before {
     width: 100%;
     left: 0;
-}
+} 
 
-nav .nav_but:hover {
+ nav .nav_but:hover {
     color: #FF9800;
 }
 
 .hamwrap .nav_logo2{
     display: none;
 }
+
+
 
 
 
@@ -363,6 +368,10 @@ small p {
         overflow: hidden;
         
         opacity: 0;
+    }
+
+    nav li::before{
+        display: none;
     }
 
     .menu.active ul{

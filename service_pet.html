@@ -22,6 +22,9 @@
     <!--------------script-------------->
     <script src="./js/jQuery/jquery-3.7.1.js"></script>
 
+    <!----------------aos---------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <div class="wrapper">
 
@@ -48,13 +51,13 @@
                 <li><a class="nav_but" href="contect.html">預約表單</a></li>
             </ul>
         </div>
-        <script src="./js/nav.js"></script>
+       
 
     </nav>
 
     <!----------------header-------------------->
     <header>
-        <div class="title">
+        <div class="title" data-aos="fade"  data-aos-duration="1500" data-aos-delay="100">
             <h1>寵物寫真</h1>
         </div>
     </header>
@@ -64,12 +67,12 @@
     <div class="container">
         <div class="content">
             <main>
-                <picture>
+                <picture data-aos="fade-up"   data-aos-easing="ease-out-back" data-aos-duration="1500">
                     <source class="dog" srcset="./img/pet_pic1_1.jpg" media="(max-width: 768px)">
                     <img class="dog" src="./img/pet_pic1.jpg" alt="">
                   </picture>
-                <section>
-                    <div class="text">
+                <section data-aos="fade"  data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-delay="400">
+                    <div class="text" >
                         <h2>與寶貝毛小孩最棒的回憶紀錄</h2>
                         <p>每位毛小孩都是珍貴的家庭成員，<br>
                             無論是活潑的狗狗、優雅的貓咪，<br>
@@ -96,7 +99,7 @@
                         <iframe  src="https://www.youtube.com/embed/V7FvpIJp6QI" title="貓咪VLOG｜喵少爺Woosa的一天" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <img src="./img/logo_white.png" alt="">
-                    <p>最動人心弦的回憶，僅在片刻傾注</p>
+                    <p data-aos="fade"  data-aos-duration="1000"  >最動人心弦的回憶，僅在片刻傾注</p>
                 </main>
             </div>
         <!---------------------------------swiper------------------------------------->
@@ -180,7 +183,12 @@
     </small>
 
 </div>
+<!----------------aos---------------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<!-----------------js----------------->
+<script src="./js/nav.js"></script>
+<script src="./js/scroll.js"></script>
 
 <body>
     
