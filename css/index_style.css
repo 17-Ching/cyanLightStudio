@@ -854,3 +854,15 @@ main .s2 {
         background-image: url('.././img/index_carousel1.jpg');
     }
 }
+
+@media screen and (max-width:352px){
+    main .pic2 {
+        max-width: 300px;
+        height: 530px;
+    }
+
+    .contact .contact-link, .contact .form-link{
+        width: 120px;
+        height: 30px;
+    }
+}

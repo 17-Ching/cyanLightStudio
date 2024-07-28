@@ -199,7 +199,7 @@ header h1 {
 
 /* --------RWD------------ */
 
-@media screen and (max-width : 947px) {
+@media screen and (max-width : 992px) {
 
     html {
         font-size: 80%;

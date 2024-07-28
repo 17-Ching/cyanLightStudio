@@ -245,6 +245,12 @@ section .text{
 
 /* ----------RWD------------- */
 
+@media screen and (max-width:850px){
+    .videowrap p::before, .videowrap p::after {
+        width: 24%;
+    }
+}
+
 @media screen and (max-width:768px) {
 
     header{
@@ -274,6 +280,16 @@ section .text{
     .title h1{
         font-size: 50px;
     }
+
+    .videowrap p::before, .videowrap p::after {
+        width: 16%;
+    }
+}
+
+@media screen and (max-width:494px){
+    .videowrap p::before, .videowrap p::after {
+        display: none;
+    }
 }
 
 @media screen and (max-width:430px){
@@ -282,6 +298,8 @@ section .text{
         background-position: -280px 0;
 
     }
+
+
 }
 
 
