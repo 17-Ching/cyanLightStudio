@@ -375,10 +375,10 @@ small p {
     }
 
     .menu.active ul{
-        
         height: 600px;
         opacity: 1;
     }
+
 
     nav .logo1{
         display: none;
