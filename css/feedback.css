@@ -135,7 +135,7 @@ header h1 {
     color: #333;
     font-size: 0.875rem;
     line-height: 200%;
-    max-width: 500px;
+    /* max-width: 500px; */
     max-height: 50px;
     margin-bottom: 30px;
 

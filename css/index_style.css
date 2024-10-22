@@ -171,14 +171,14 @@ main .s2 {
 .content {
     display: flex;
     margin-bottom: 50px;
-    max-height: 600px;
+    /* max-height: 600px; */
 }
 
 .content .contentpic {
     /* width: 100%; */
     
     max-width: 600px;
-    max-height: 600px;
+    height: 100%;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -188,9 +188,9 @@ main .s2 {
     width: 100%;
     display: block;
     text-align: center;
-    padding: 5%;
+    padding: 5% 5% 2% 5%;
     background-color: white;
-    
+    box-sizing: border-box;
 }
 
 .text .logo {
@@ -338,8 +338,7 @@ main .s2 {
     background-repeat: no-repeat;
     background-size: contain;
     --swiper-navigation-size: 30%;
-    --swiper-navigation-top-offset:115%;
-    --swiper-navigation-bottom-offset:115%;
+    --swiper-navigation-top-offset:118%;
 }
 
 .swiper-button-next{
@@ -427,7 +426,7 @@ main .s2 {
 
 .service ul {
     /* border: 2px solid red; */
-    max-width: 1440px;
+    /* max-width: 1440px; */
     height: 650px;
     display: flex;
     flex-direction: column;
@@ -680,6 +679,11 @@ main .s2 {
     .swiper-button-next, .swiper-button-prev{
         --swiper-navigation-top-offset:106%;
     }
+
+    .swiper2 .swiper-button-next, .swiper2 .swiper-button-prev{
+        --swiper-navigation-top-offset:110%;
+    }
+    
 }
 
 
